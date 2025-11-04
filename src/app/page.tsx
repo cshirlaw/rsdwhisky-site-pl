@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SITE } from '@/src/config/site';
+import { SITE } from '@/config/site';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         </a>
         <a href={SITE.links.stuartDouglas} target="_blank" rel="noopener noreferrer" className="block rounded-lg border p-5 hover:shadow-sm">
           <h3 className="font-semibold">Stuart Douglas</h3>
-          <p className="text-sm text-gray-600">Rutherford Shirlaw & Denholm heritage label.</p>
+          <p className="text-sm text-gray-600">Rutherford Shirlaw &amp; Denholm heritage label.</p>
         </a>
       </div>
 

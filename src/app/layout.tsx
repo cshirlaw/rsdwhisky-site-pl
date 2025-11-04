@@ -1,7 +1,7 @@
 import './globals.css';
-import { SITE } from '@/src/config/site';
-import TopNav from '@/src/components/TopNav';
-import SiteFooter from '@/src/components/SiteFooter';
+import { SITE } from '@/config/site';
+import TopNav from '@/components/TopNav';
+import SiteFooter from '@/components/SiteFooter';
 
 export const metadata = {
   title: SITE.name,

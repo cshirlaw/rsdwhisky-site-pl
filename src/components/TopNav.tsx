@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { SITE } from '@/src/config/site';
+import { SITE } from '@/config/site';
 
 export default function TopNav() {
   return (

@@ -1,21 +1,19 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import TopNav from "@/components/TopNav";
-import SiteFooter from "@/components/SiteFooter";
+import './globals.css';
+import { SITE } from '@/src/config/site';
+import TopNav from '@/src/components/TopNav';
+import SiteFooter from '@/src/components/SiteFooter';
 
-export const metadata: Metadata = {
-  title: "RSD Whisky",
-  description: "Rutherford, Shirlaw & Denholm Ltd — whisky advisory and prestige bottlings.",
+export const metadata = {
+  title: SITE.name,
+  description: 'RSD Whisky — Advisory, sourcing and prestige bottlings.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-white text-slate-900">
+      <body className="bg-white text-slate-900 antialiased">
         <TopNav />
-        <main className="mx-auto max-w-6xl px-4 py-10">
-          {children}
-        </main>
+        <main className="mx-auto max-w-6xl px-4 py-10">{children}</main>
         <SiteFooter />
       </body>
     </html>

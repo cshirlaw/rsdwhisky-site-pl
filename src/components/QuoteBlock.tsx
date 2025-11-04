@@ -5,7 +5,8 @@ export default function QuoteBlock() {
   if (!q) return null;
   return (
     <figure className="rounded-xl border bg-white p-6">
-      <blockquote className="text-lg leading-relaxed">“{q.text}”</blockquote>
+      <div style={{ height: 3, width: 42, backgroundColor: SITE.brand.accent }} />
+      <blockquote className="mt-4 text-lg leading-relaxed">“{q.text}”</blockquote>
       <figcaption className="mt-3 text-sm text-gray-600">
         <span className="font-medium">{q.author}</span> — {q.role}, on {q.on}.
       </figcaption>

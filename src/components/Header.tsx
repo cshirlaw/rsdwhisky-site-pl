@@ -9,6 +9,7 @@ const navItems = [
   { href: "/about", label: "About" },
   { href: "/our-whisky", label: "Our Whisky" },
   { href: "/brands", label: "Our Brands" },
+  { href: "/rtd", label: "RTD Drinks" },
   { href: "/how-we-work", label: "How We Work" },
   { href: "/whisky-knowledge", label: "Whisky Knowledge" },
   { href: "/contact", label: "Contact" },

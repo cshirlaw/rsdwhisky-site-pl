@@ -3,50 +3,59 @@ import PageShell from "@/components/PageShell";
 export default function OurWhiskyPage() {
   return (
     <PageShell
-      title="Our Whisky and RTD Drinks"
-      intro="We work with Scotch whisky in cask, bottled brands for export, and canned ready-to-drink spirit mixes for modern retail."
+      title="Our Whisky"
+      intro="We work with Scotch whisky in cask, bottled brands for export, selected single malt projects and, separately, ready-to-drink spirit mixes."
     >
       <section>
-        <h2 className="mb-1 text-lg font-semibold">Blended Scotch whisky</h2>
+        <h2 className="mb-1 text-lg font-semibold">Scotch whisky</h2>
         <p>
-          Our blended Scotch whiskies are built around character and
-          consistency. We work with experienced blenders and nosers in the
-          independent sector who understand how to select casks and build a
-          flavour profile that can be repeated from batch to batch. Most of the
-          cost goes into the liquid in the bottle, not into heavy packaging.
+          Scotch is at the centre of our business. Most people use the word
+          “Scotch” to mean blended Scotch, which is the core of global whisky
+          sales, but we simply focus on supplying good Scotch whisky at fair
+          value. Our work involves selecting the right liquids, keeping character
+          consistent and presenting the whisky honestly and clearly on shelf.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="mb-1 text-lg font-semibold">Our brands</h2>
+        <p>
+          We create Scotch whisky brands for specific markets. These are built
+          around value, trust and appearance. We use bottle shapes that run
+          efficiently on fast bottling lines while taking care with label design
+          and paper quality, so that the finished product looks and feels premium
+          in the hand without unnecessary cost.
         </p>
       </section>
 
       <section>
         <h2 className="mb-1 text-lg font-semibold">Single malt projects</h2>
         <p>
-          We support single malt projects for selected markets, drawing on
-          relationships with distilleries and cask owners. These can range from
-          simple age-stated malts through to more specialised cask selections
-          for private clients or local distributors.
+          We support selective single malt projects, working with distilleries
+          and cask owners as needed. These can range from age-stated malts for a
+          particular market to more specialised cask selections for private
+          clients or for limited-edition releases. We keep the approach simple
+          and practical — good whisky, clearly presented.
         </p>
       </section>
 
       <section>
-        <h2 className="mb-1 text-lg font-semibold">Private label and exclusive brands</h2>
+        <h2 className="mb-1 text-lg font-semibold">Exclusive and private-label work</h2>
         <p>
-          For many retailers the most effective route is an exclusive brand for
-          their own shelves. We work with bottle shapes that run efficiently on
-          fast bottling lines, but give close attention to label design and
-          paper quality so that the product looks and feels premium in the hand.
+          Many retailers prefer an exclusive brand for their own shelves. We can
+          source the whisky, manage the bottling and prepare a brand that sits
+          comfortably within their pricing structure. The aim is reliability,
+          clear value and a product that the retailer is proud to offer.
         </p>
       </section>
 
       <section>
-        <h2 className="mb-1 text-lg font-semibold">Canned RTD drinks</h2>
+        <h2 className="mb-1 text-lg font-semibold">Ready-to-drink spirit mixes</h2>
         <p>
-          Alongside bottled Scotch, we work on canned ready-to-drink spirit
-          mixes. These are typically whisky-and-mixer or other spirit-based
-          drinks in 250 ml or 330 ml cans, aimed at convenience, modern retail
-          shelves and e-commerce. Recipe development, liquid sourcing, can
-          design and production are handled with the same care as our whisky
-          brands, with sensible pack formats and clear pricing for volume
-          business.
+          We also work on a newer development: canned ready-to-drink spirit
+          mixes in practical pack sizes such as 250 ml and 330 ml. These follow
+          the same principles as our whisky — sensible packaging, clean designs
+          and good value for modern retail shelves and online sales.
         </p>
       </section>
     </PageShell>

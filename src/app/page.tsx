@@ -65,7 +65,7 @@ export default function HomePage() {
           We are Scottish owned and independent. We work with experienced people
           across the industry and keep our company lean, so that money is spent
           where it should be spent: in the bottle, the label and the quality of
-          the whisky itself, not on heavy structures or excess packaging.
+          the whisky itself, not on overheads and unnecessary bureaucracy.
         </p>
         <p className="mt-2">
           Most of our work is done quietly, through long-standing relationships

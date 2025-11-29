@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -17,12 +18,18 @@ export default function HomePage() {
           </p>
         </header>
 
-        {/* Hero card with placeholder block and section buttons */}
+        {/* Hero card with Edinburgh image and section buttons */}
         <section className="rounded-3xl bg-neutral-50 p-4 shadow-sm ring-1 ring-neutral-200 sm:p-6">
-          <div
-            className="h-56 w-full rounded-2xl bg-neutral-200/70 sm:h-72"
-            aria-hidden="true"
-          />
+          <div className="overflow-hidden rounded-2xl">
+            <Image
+              src="/images/home-edinburgh.jpg"
+              alt="Edinburgh skyline, home of Scotch whisky"
+              width={1600}
+              height={900}
+              className="h-56 w-full object-cover sm:h-72"
+              priority
+            />
+          </div>
 
           <div className="mt-4 flex flex-wrap gap-3">
             <Link

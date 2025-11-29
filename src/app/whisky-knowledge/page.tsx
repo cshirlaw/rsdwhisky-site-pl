@@ -1,327 +1,332 @@
-import PageShell from "@/components/PageShell";
-import Link from "next/link";
+import React from "react";
 
-function ImagePlaceholder({ label }: { label: string }) {
-  return (
-    <div className="mt-4 mb-2 flex h-40 items-center justify-center rounded-2xl bg-neutral-200/70 px-4 text-center text-xs text-neutral-600">
-      {label}
-    </div>
-  );
-}
+const sections = [
+  { id: "what-scotch-is", title: "What Scotch is" },
+  { id: "how-scotch-is-made", title: "How Scotch is made" },
+  { id: "five-scotch-regions", title: "The five Scotch regions" },
+  { id: "scotch-whisky-categories", title: "Scotch whisky categories" },
+  { id: "tasting-scotch", title: "Tasting Scotch" },
+  { id: "glassware", title: "Glassware" },
+  { id: "scotch-in-law", title: "Scotch in law – essentials" },
+];
 
 export default function WhiskyKnowledgePage() {
   return (
-    <PageShell
-      title="Whisky knowledge"
-      intro="A plain guide to Scotch whisky — how it is made, what it means, and why it matters."
-    >
+    <main className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-12">
+      <div className="mb-6 text-sm text-neutral-500">
+        Home / <span className="text-neutral-700">Whisky knowledge</span>
+      </div>
+
+      <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">
+        Whisky knowledge
+      </h1>
+      <p className="mt-3 max-w-2xl text-sm text-neutral-700 sm:text-base">
+        A plain guide to Scotch whisky — how it is made, what it means, and why
+        it matters.
+      </p>
+
       {/* On this page */}
-      <nav
-        aria-label="On this page"
-        className="mb-6 rounded-2xl bg-white/70 p-4 text-sm shadow-sm"
-      >
+      <section className="mt-8 rounded-2xl border border-neutral-200 bg-white p-4 text-sm shadow-sm sm:p-6">
         <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">
           On this page
         </h2>
-        <ul className="space-y-1">
-          <li>
-            <a href="#what-scotch-is" className="underline-offset-2 hover:underline">
-              What Scotch is
-            </a>
-          </li>
-          <li>
-            <a href="#how-scotch-is-made" className="underline-offset-2 hover:underline">
-              How Scotch is made
-            </a>
-          </li>
-          <li>
-            <a href="#regions" className="underline-offset-2 hover:underline">
-              The five Scotch regions
-            </a>
-          </li>
-          <li>
-            <a href="#categories" className="underline-offset-2 hover:underline">
-              Scotch whisky categories
-            </a>
-          </li>
-          <li>
-            <a href="#tasting" className="underline-offset-2 hover:underline">
-              Tasting Scotch
-            </a>
-          </li>
-          <li>
-            <a href="#glassware" className="underline-offset-2 hover:underline">
-              Glassware
-            </a>
-          </li>
-          <li>
-            <a href="#references" className="underline-offset-2 hover:underline">
-              Scotch in law – essentials
-            </a>
-          </li>
+        <ul className="space-y-1 text-sm">
+          {sections.map((section) => (
+            <li key={section.id}>
+              <a
+                href={`#${section.id}`}
+                className="text-neutral-800 underline-offset-2 hover:underline"
+              >
+                {section.title}
+              </a>
+            </li>
+          ))}
         </ul>
-      </nav>
-
-      {/* What Scotch is */}
-      <section id="what-scotch-is">
-        <h2 className="mb-2 text-lg font-semibold">What Scotch is</h2>
-        <p>
-          Scotch whisky holds a protected place in law. It must be made in Scotland,
-          from water, cereals and yeast, and matured here in oak casks for at least
-          three years. Nothing else is allowed but water and a small amount of
-          caramel for colour.
-        </p>
-        <p className="mt-2">
-          Scotch is often spoken of as malt or single malt, but in truth:
-          <br />
-          <span className="font-semibold">Scotch means blended Scotch.</span>
-        </p>
-        <p className="mt-2">
-          It is the whisky most people drink around the world — a marriage of single
-          malt and single grain, designed to be consistent in character and steady in
-          quality.
-        </p>
-        <p className="mt-2">
-          Single malts sit alongside this as distinct expressions from individual
-          distilleries. They are important in their own right, but blended Scotch
-          remains the heart of the industry.
-        </p>
-        <ImagePlaceholder label="Image placeholder – simple visual explaining that 'Scotch' usually means blended Scotch, with single malt as one part of the wider picture." />
       </section>
 
-      {/* How Scotch is made */}
-      <section id="how-scotch-is-made">
-        <h2 className="mb-2 mt-8 text-lg font-semibold">How Scotch is made</h2>
-        <p>
-          The making of Scotch is simple in principle and deep in craft. It begins
-          with three things:
-        </p>
-        <ul className="mt-2 list-disc space-y-1 pl-4">
-          <li>Water – soft, hard, peaty or clear.</li>
-          <li>Cereals – malted barley for malt whisky; barley, wheat or maize for grain.</li>
-          <li>Yeast – to spark fermentation.</li>
-        </ul>
+      <div className="mt-10 space-y-10 text-sm leading-relaxed text-neutral-800 sm:text-base">
+        {/* What Scotch is */}
+        <section id="what-scotch-is">
+          <h2 className="text-xl font-semibold text-neutral-900">
+            What Scotch is
+          </h2>
+          <p className="mt-3">
+            Scotch whisky holds a protected place in law. It must be made in
+            Scotland from water, cereals and yeast, and matured in oak casks in
+            Scotland for at least three years. Nothing else is allowed but water
+            and a small amount of caramel for colour.
+          </p>
+          <p className="mt-3">
+            Scotch is often spoken of as malt or single malt, but in truth:
+            <br />
+            <span className="font-semibold">Scotch means blended Scotch.</span>
+          </p>
+          <p className="mt-3">
+            It is the whisky most people drink around the world — a marriage of
+            single malt and single grain, designed to be consistent in character
+            and steady in quality.
+          </p>
+          <p className="mt-3">
+            Single malts sit alongside this as distinct expressions from
+            individual distilleries. They are important in their own right, but
+            blended Scotch remains the heart of the industry.
+          </p>
+        </section>
 
-        <h3 className="mt-4 font-semibold">1. Malting</h3>
-        <p>
-          Barley is steeped, germinated and kilned. Peat may be used for smoke,
-          which can carry through into the finished whisky.
-        </p>
+        {/* How Scotch is made */}
+        <section id="how-scotch-is-made">
+          <h2 className="text-xl font-semibold text-neutral-900">
+            How Scotch is made
+          </h2>
+          <p className="mt-3">
+            Every Scotch whisky, whether malt or grain, follows the same basic
+            path:
+          </p>
+          <ol className="mt-3 list-decimal space-y-2 pl-5">
+            <li>
+              <span className="font-semibold">Malting and milling</span> – Barley
+              is soaked, allowed to sprout, then dried in a kiln. It is ground
+              into grist.
+            </li>
+            <li>
+              <span className="font-semibold">Mashing</span> – Hot water is
+              added to the grist to draw out sugars, producing a sweet liquid
+              called wort.
+            </li>
+            <li>
+              <span className="font-semibold">Fermentation</span> – Yeast is
+              added. Over a few days the yeast turns sugar into alcohol,
+              creating a kind of strong beer.
+            </li>
+            <li>
+              <span className="font-semibold">Distillation</span> – Malt whisky
+              is distilled in copper pot stills, usually twice. Grain whisky is
+              distilled in continuous stills for a lighter spirit.
+            </li>
+            <li>
+              <span className="font-semibold">Maturation</span> – The new spirit
+              is filled into oak casks and matured in Scotland for at least
+              three years, often much longer. In cask, colour, aroma and flavour
+              develop.
+            </li>
+            <li>
+              <span className="font-semibold">Blending and bottling</span> –
+              Matured whiskies are selected, blended to the desired style and
+              strength, adjusted with water, and bottled at a minimum of 40%
+              alcohol by volume.
+            </li>
+          </ol>
+        </section>
 
-        <h3 className="mt-3 font-semibold">2. Mashing</h3>
-        <p>
-          The malt is ground and mixed with hot water to draw out the sugars and make
-          a sweet liquid known as wort.
-        </p>
+        {/* The five Scotch regions */}
+        <section id="five-scotch-regions">
+          <h2 className="text-xl font-semibold text-neutral-900">
+            The five Scotch regions
+          </h2>
+          <p className="mt-3">
+            For Scotch whisky, law and industry practice recognise five main
+            regions:{" "}
+            <span className="font-semibold">
+              Highlands, Lowlands, Speyside, Islay and Campbeltown
+            </span>
+            . Each has its own mix of distilleries and house styles, shaped by
+            water, climate, landscape and local habits.
+          </p>
+          <ul className="mt-3 list-disc space-y-2 pl-5">
+            <li>
+              <span className="font-semibold">Highlands</span> – The largest
+              region by area. Styles range from lighter, floral malts to coastal
+              whiskies with more salt, smoke or spice.
+            </li>
+            <li>
+              <span className="font-semibold">Lowlands</span> – Generally
+              lighter, softer whiskies. Often grassy, malty and gentle, and a
+              good place to start for new drinkers.
+            </li>
+            <li>
+              <span className="font-semibold">Speyside</span> – The most densely
+              populated whisky region. Often fruity and honeyed, with apples,
+              pears and malt sweetness, and many whiskies matured in sherry
+              casks.
+            </li>
+            <li>
+              <span className="font-semibold">Islay</span> – A small island with
+              a strong character. Many distilleries use heavily peated malt,
+              giving smoky, coastal whiskies with seaweed, tar and iodine
+              notes.
+            </li>
+            <li>
+              <span className="font-semibold">Campbeltown</span> – Once home to
+              many distilleries, now a small but distinct region. Whiskies can
+              be robust, sometimes oily or maritime, with a mix of fruit, spice
+              and smoke.
+            </li>
+          </ul>
+          <p className="mt-3">
+            These are broad guides, not strict rules, but they help people
+            navigate the variety within Scotch.
+          </p>
+        </section>
 
-        <h3 className="mt-3 font-semibold">3. Fermentation</h3>
-        <p>
-          Yeast is added to the wort and turns the sugars into alcohol, creating a
-          kind of strong beer called the wash.
-        </p>
-
-        <h3 className="mt-3 font-semibold">4. Distillation</h3>
-        <p>
-          Malt whisky is distilled in copper pot stills, in batches. Grain whisky is
-          distilled in a continuous still, producing a lighter, more fragrant spirit.
-        </p>
-
-        <h3 className="mt-3 font-semibold">5. Maturation</h3>
-        <p>
-          The new spirit rests in oak casks: often ex-bourbon barrels, sherry casks
-          or other seasoned wood. Time, wood and air shape the character and smooth
-          the spirit.
-        </p>
-
-        <h3 className="mt-3 font-semibold">6. Bottling or blending</h3>
-        <p>
-          Most Scotch becomes part of a blend, kept consistent by skill and
-          experience, so that each brand tastes as it should, year after year.
-        </p>
-
-        <ImagePlaceholder label="Image placeholder – simple process diagram: water, barley and yeast through malting, mashing, fermentation, distillation, maturation and bottling." />
-      </section>
-
-      {/* Regions */}
-      <section id="regions">
-        <h2 className="mb-2 mt-8 text-lg font-semibold">The five Scotch regions</h2>
-        <p>
-          The Scotch Whisky Regulations recognise five regions. Each offers its own
-          character, shaped by landscape, climate and long habit.
-        </p>
-
-        <h3 className="mt-4 font-semibold">Highlands</h3>
-        <p>
-          The largest region. Styles range from soft and honeyed to robust, coastal
-          and dry. A place of breadth and variety.
-        </p>
-        <ImagePlaceholder label="Image placeholder – Highland landscape or distillery scene." />
-
-        <h3 className="mt-4 font-semibold">Speyside</h3>
-        <p>
-          A sub-region of the Highlands but with its own identity. Noted for
-          elegance, fruit and delicacy, often with sherry-cask influence.
-        </p>
-        <ImagePlaceholder label="Image placeholder – Speyside river or distillery image." />
-
-        <h3 className="mt-4 font-semibold">Lowlands</h3>
-        <p>
-          Light, gentle whiskies. Grass, cereal, soft fruits. An area of growing
-          interest as new distilleries open.
-        </p>
-        <ImagePlaceholder label="Image placeholder – Lowland fields or distillery." />
-
-        <h3 className="mt-4 font-semibold">Islay</h3>
-        <p>
-          The island of peat and Atlantic weather. Whiskies range from smoky and
-          maritime to softer coastal styles. Characterful and unmistakable.
-        </p>
-        <ImagePlaceholder label="Image placeholder – Islay coastline or distillery by the sea." />
-
-        <h3 className="mt-4 font-semibold">Campbeltown</h3>
-        <p>
-          Once home to many distilleries, now only a few remain, but the style is
-          rich, slightly salty and full of character.
-        </p>
-        <ImagePlaceholder label="Image placeholder – Campbeltown harbour or local distillery." />
-      </section>
-
-      {/* Categories */}
-      <section id="categories">
-        <h2 className="mb-2 mt-8 text-lg font-semibold">Scotch whisky categories</h2>
-        <p>
-          Scotch falls into five legal types. The definitions are set in law and
-          help protect the character and reputation of Scotch around the world.
-        </p>
-
-        <h3 className="mt-4 font-semibold">Single malt Scotch whisky</h3>
-        <p>
-          Made from malted barley, distilled in pot stills at a single distillery.
-        </p>
-
-        <h3 className="mt-3 font-semibold">Single grain Scotch whisky</h3>
-        <p>
-          Made from malted barley and other cereals, distilled in a continuous still
-          at a single site. Most is used for blending, but some is bottled in its
-          own right.
-        </p>
-
-        <h3 className="mt-3 font-semibold">Blended Scotch whisky</h3>
-        <p>
-          The foundation of the industry. A marriage of single malt and single grain,
-          brought together for character and consistency. This is the Scotch most
-          people drink worldwide.
-        </p>
-
-        <h3 className="mt-3 font-semibold">Blended malt Scotch whisky</h3>
-        <p>
-          A blend of two or more single malts, with no grain whisky in the mix.
-        </p>
-
-        <h3 className="mt-3 font-semibold">Blended grain Scotch whisky</h3>
-        <p>
-          A blend of two or more single grain whiskies.
-        </p>
-
-        <ImagePlaceholder label="Image placeholder – simple graphic showing the five Scotch categories and how they relate to each other." />
-      </section>
-
-      {/* Tasting */}
-      <section id="tasting">
-        <h2 className="mb-2 mt-8 text-lg font-semibold">Tasting Scotch</h2>
-        <p>
-          Tasting whisky is best done without fuss, but a few simple steps can help
-          you understand it more clearly.
-        </p>
-
-        <h3 className="mt-4 font-semibold">Look</h3>
-        <p>
-          Hold the glass to the light. Colour hints mainly at the cask type, not the
-          age. Swirl it gently and note the “legs” on the glass — they often run
-          slower with higher strength or longer maturation.
-        </p>
-
-        <h3 className="mt-3 font-semibold">Nose</h3>
-        <p>
-          Bring the glass to your nose and breathe gently. Aromas open in layers.
-          There is no correct answer, only what you find yourself.
-        </p>
-
-        <h3 className="mt-3 font-semibold">Taste</h3>
-        <p>
-          Let the whisky coat the tongue. Sweetness sits at the tip, spice and
-          dryness further back. A drop of still water can open the spirit and bring
-          hidden notes to the surface.
-        </p>
-
-        <h3 className="mt-3 font-semibold">Finish</h3>
-        <p>
-          Consider how long the flavour lingers. Length often speaks of maturity and
-          balance, though younger whiskies can still be lively and interesting.
-        </p>
-      </section>
-
-      {/* Glassware */}
-      <section id="glassware">
-        <h2 className="mb-2 mt-8 text-lg font-semibold">Glassware</h2>
-        <p>
-          The right glass need not be complicated. The main point is to hold the
-          aromas and allow you to taste comfortably.
-        </p>
-
-        <ul className="mt-2 list-disc space-y-1 pl-4">
-          <li>
-            A{" "}
-            <Link
-              href="https://glencairn.com/"
-              target="_blank"
-              className="underline"
-            >
-              Glencairn glass
-            </Link>{" "}
-            is widely used for tastings; its shape gathers aroma and is easy to hold.
-          </li>
-          <li>A tumbler suits whisky with ice or simple mixed serves.</li>
-          <li>A highball glass is used for lighter, longer drinks.</li>
-        </ul>
-
-        <ImagePlaceholder label="Image placeholder – selection of whisky glasses: Glencairn, tumbler and highball." />
-      </section>
-
-      {/* Scotch in law – essentials */}
-      <section id="references">
-        <h2 className="mb-2 mt-8 text-lg font-semibold">Scotch in law – essentials</h2>
-        <p>
-          For most drinkers, it is enough to know how Scotch looks, smells and tastes.
-          For those who need the legal outline, the main points are straightforward:
-        </p>
-        <ul className="mt-2 list-disc space-y-1 pl-4 text-sm">
-          <li>Scotch must be distilled and matured in Scotland.</li>
-          <li>Only water, cereals and yeast may be used in production.</li>
-          <li>It must be matured in oak casks in Scotland for at least three years.</li>
-          <li>The minimum bottling strength is 40% ABV.</li>
-          <li>
-            There are five legal categories: single malt, single grain, blended
-            Scotch, blended malt and blended grain.
-          </li>
-          <li>
-            The Regulations recognise five regions: Highlands, Lowlands, Speyside,
-            Islay and Campbeltown.
-          </li>
-        </ul>
-        <p className="mt-2 text-sm text-neutral-700">
-          Those who wish to read the full legal text can find it through the Scotch
-          Whisky Association&apos;s material on{" "}
-          <Link
-            href="https://www.scotch-whisky.org.uk/discover-scotch/enjoying-scotch/scotch-whisky-categories/"
-            target="_blank"
-            className="underline"
-          >
+        {/* Scotch whisky categories */}
+        <section id="scotch-whisky-categories">
+          <h2 className="text-xl font-semibold text-neutral-900">
             Scotch whisky categories
-          </Link>
-          . For most purposes, the summary above will be enough.
-        </p>
-      </section>
-    </PageShell>
+          </h2>
+          <p className="mt-3">
+            By law there are five Scotch whisky categories:
+          </p>
+          <ul className="mt-3 list-disc space-y-2 pl-5">
+            <li>
+              <span className="font-semibold">Single Malt Scotch Whisky</span> –
+              Made at one distillery, from malted barley only, in pot stills.
+            </li>
+            <li>
+              <span className="font-semibold">Single Grain Scotch Whisky</span>{" "}
+              – Made at one distillery, from malted barley plus other grains, in
+              continuous stills.
+            </li>
+            <li>
+              <span className="font-semibold">Blended Scotch Whisky</span> – A
+              blend of one or more Single Malts with one or more Single Grains.
+              This is the main style people drink worldwide.
+            </li>
+            <li>
+              <span className="font-semibold">Blended Malt Scotch Whisky</span> –
+              A blend of two or more Single Malts from different distilleries,
+              with no grain whisky.
+            </li>
+            <li>
+              <span className="font-semibold">Blended Grain Scotch Whisky</span>{" "}
+              – A blend of two or more Single Grains from different
+              distilleries.
+            </li>
+          </ul>
+          <p className="mt-3">
+            Most brands on shop shelves are{" "}
+            <span className="font-semibold">Blended Scotch</span>, built for
+            consistency and value over many years.
+          </p>
+        </section>
+
+        {/* Tasting Scotch */}
+        <section id="tasting-scotch">
+          <h2 className="text-xl font-semibold text-neutral-900">
+            Tasting Scotch
+          </h2>
+          <p className="mt-3">
+            There is no single “correct” way to taste Scotch, but a simple
+            approach helps:
+          </p>
+          <ol className="mt-3 list-decimal space-y-2 pl-5">
+            <li>
+              <span className="font-semibold">Look</span> – Hold the glass up to
+              the light. Note the colour, which comes from the cask, not from
+              the distillation.
+            </li>
+            <li>
+              <span className="font-semibold">Nose</span> – Smell gently with
+              your mouth slightly open. Take short sniffs rather than one big
+              breath.
+            </li>
+            <li>
+              <span className="font-semibold">Taste</span> – Sip, hold the
+              whisky in the mouth and let it coat the tongue before swallowing.
+            </li>
+            <li>
+              <span className="font-semibold">Add water if you wish</span> – A
+              little still water can open up the aroma and soften the alcohol.
+              There is no rule; add as much or as little as suits you.
+            </li>
+            <li>
+              <span className="font-semibold">Think about the finish</span> –
+              Notice how long the flavour lingers and how it changes.
+            </li>
+          </ol>
+          <p className="mt-3">
+            The aim is not to find fancy words, but simply to notice what you
+            like.
+          </p>
+        </section>
+
+        {/* Glassware */}
+        <section id="glassware">
+          <h2 className="text-xl font-semibold text-neutral-900">Glassware</h2>
+          <p className="mt-3">
+            Good glassware makes tasting easier but does not have to be
+            complicated.
+          </p>
+          <ul className="mt-3 list-disc space-y-2 pl-5">
+            <li>
+              For tastings, a{" "}
+              <span className="font-semibold">tulip-shaped glass</span> (such as
+              a Glencairn glass) helps concentrate the aroma.
+            </li>
+            <li>
+              For long drinks and highballs, a{" "}
+              <span className="font-semibold">tall straight glass</span> works
+              well.
+            </li>
+            <li>
+              A simple <span className="font-semibold">tumbler</span> is still a
+              perfectly good way to enjoy Scotch at home.
+            </li>
+          </ul>
+          <p className="mt-3">
+            We work closely with specialist glassmakers such as Glencairn
+            Crystal on prestige bottlings and bespoke glassware for clients.
+          </p>
+        </section>
+
+        {/* Scotch in law – essentials */}
+        <section id="scotch-in-law">
+          <h2 className="text-xl font-semibold text-neutral-900">
+            Scotch in law – essentials
+          </h2>
+          <p className="mt-3">
+            A few key points from the Scotch Whisky Regulations and related
+            rules:
+          </p>
+          <ul className="mt-3 list-disc space-y-2 pl-5">
+            <li>
+              Scotch whisky must be{" "}
+              <span className="font-semibold">
+                distilled and matured in Scotland
+              </span>{" "}
+              for at least <span className="font-semibold">three years</span> in
+              oak casks.
+            </li>
+            <li>
+              It must be bottled at a{" "}
+              <span className="font-semibold">
+                minimum of 40% alcohol by volume
+              </span>
+              .
+            </li>
+            <li>
+              Only <span className="font-semibold">water</span> and{" "}
+              <span className="font-semibold">plain caramel colouring</span> may
+              be added.
+            </li>
+            <li>
+              Labels must clearly state the{" "}
+              <span className="font-semibold">category</span> (for example,
+              “Blended Scotch Whisky” or “Single Malt Scotch Whisky”) and any{" "}
+              <span className="font-semibold">age statement</span> must reflect
+              the youngest whisky in the bottle.
+            </li>
+            <li>
+              The word <span className="font-semibold">“Scotch”</span> is
+              protected and may only be used for whisky that meets these
+              standards.
+            </li>
+          </ul>
+          <p className="mt-3">
+            These rules protect Scotch’s reputation and help consumers know what
+            they are buying.
+          </p>
+        </section>
+      </div>
+    </main>
   );
 }

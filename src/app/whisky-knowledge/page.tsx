@@ -3,49 +3,55 @@ import PageShell from "@/components/PageShell";
 export default function WhiskyKnowledgePage() {
   return (
     <PageShell
-      title="Whisky Knowledge"
-      intro="Over time this section will grow into a simple, practical reference point for people who buy, drink or sell Scotch whisky."
+      title="Whisky knowledge"
+      intro="A simple guide to Scotch and Irish whiskey — how it is made, the regions, the styles and the key terms."
     >
-      <section>
-        <h2 className="mb-1 text-lg font-semibold">What Scotch whisky is</h2>
+      {/* Section links */}
+      <nav className="mb-8 text-sm">
+        <ul className="space-y-1">
+          <li><a className="underline" href="#regions">Whisky regions</a></li>
+          <li><a className="underline" href="#categories">Whisky categories</a></li>
+          <li><a className="underline" href="#production">How whisky is made</a></li>
+          <li><a className="underline" href="#tasting">How to taste whisky</a></li>
+        </ul>
+      </nav>
+
+      {/* Regions */}
+      <section id="regions" className="mt-8">
+        <h2 className="mb-1 text-lg font-semibold">Whisky regions</h2>
         <p>
-          Scotch whisky is made in Scotland from malted barley and other grains,
-          distilled and matured in oak casks for a minimum of three years. The
-          main styles are single malt, single grain and blended Scotch whisky.
-          Regulations control how Scotch is made, matured and described, to
-          protect its reputation worldwide.
+          Scotch whisky is grouped into five protected regions — Highlands,
+          Lowlands, Speyside, Islay and Campbeltown — each with its own mix of
+          distilleries, styles and traditions.
         </p>
       </section>
 
-      <section>
-        <h2 className="mb-1 text-lg font-semibold">How to enjoy it</h2>
+      {/* Categories */}
+      <section id="categories" className="mt-8">
+        <h2 className="mb-1 text-lg font-semibold">Whisky categories</h2>
         <p>
-          There is no single correct way to drink Scotch. Many people prefer it
-          neat, others with a little water to open up the aroma, and some with
-          ice or a mixer. Our advice is simple: start with small quantities,
-          take time to smell as well as taste, and find the way that suits you
-          best.
+          Scotch whisky is legally defined, with clear categories such as single
+          malt, blended Scotch, blended malt and single grain. Irish whiskey has
+          its own traditional classifications too.
         </p>
       </section>
 
-      <section>
-        <h2 className="mb-1 text-lg font-semibold">Tasting notes and comparisons</h2>
+      {/* Production */}
+      <section id="production" className="mt-8">
+        <h2 className="mb-1 text-lg font-semibold">How whisky is made</h2>
         <p>
-          We plan to publish tasting notes and comparisons from respected whisky
-          writers and industry experts, including people such as Charlie
-          MacLean, Dave Broom and Blair Bowman. These will focus on plain,
-          practical descriptions rather than marketing language.
+          Whisky is made from water, grain and yeast. It is mashed, fermented,
+          distilled and matured — usually in oak casks — for several years. The
+          details vary between Scotch and Irish whiskey.
         </p>
       </section>
 
-      <section>
-        <h2 className="mb-1 text-lg font-semibold">Scotland and its distilleries</h2>
+      {/* Tasting */}
+      <section id="tasting" className="mt-8">
+        <h2 className="mb-1 text-lg font-semibold">How to taste whisky</h2>
         <p>
-          Scotland has one of the highest densities of distilleries in the
-          world, with more per square mile than any other major whisky-producing
-          country. From island distilleries on Islay and Skye to Speyside, the
-          Highlands and the Lowlands, this concentration of craft and knowledge
-          is a central part of what makes Scotch unique.
+          A simple five-step process: look, smell, taste, add a little water if
+          needed, and consider the finish. Tasting is about curiosity, not rules.
         </p>
       </section>
     </PageShell>

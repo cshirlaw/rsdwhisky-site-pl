@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import PageShell from "@/components/PageShell";
 
 export default function HomePage() {
@@ -7,11 +8,16 @@ export default function HomePage() {
       title="RSD Whisky"
       intro="A Scottish-owned, independent whisky business based in Edinburgh, working with Scotland’s independent network to supply honest Scotch and Irish whiskey for modern retail."
     >
-      {/* Home hero image slot (home-hero.jpg) */}
-      <div
-        className="mb-6 h-48 rounded-2xl bg-neutral-200/60"
-        aria-hidden="true"
-      />
+      {/* Home hero */}
+      <div className="mb-6 overflow-hidden rounded-2xl">
+        <Image
+          src="/images/home-hero.jpg"
+          alt="Edinburgh, the home of Scotch whisky."
+          width={1600}
+          height={600}
+          className="h-48 w-full object-cover sm:h-64 md:h-72"
+        />
+      </div>
 
       {/* Primary calls to action */}
       <section className="mb-8">
@@ -65,7 +71,7 @@ export default function HomePage() {
           We are Scottish owned and independent. We work with experienced people
           across the industry and keep our company lean, so that money is spent
           where it should be spent: in the bottle, the label and the quality of
-          the whisky itself, not on overheads and unnecessary bureaucracy.
+          the whisky itself, not on overheads and unnecessary waste.
         </p>
         <p className="mt-2">
           Most of our work is done quietly, through long-standing relationships

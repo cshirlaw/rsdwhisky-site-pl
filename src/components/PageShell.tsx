@@ -1,21 +1,34 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
+import Breadcrumbs from "./Breadcrumbs";
 
-export default function PageShell({ title, intro, children }: { title: string; intro?: string; children: ReactNode }) {
+type PageShellProps = {
+  title: string;
+  intro?: string;
+  children: ReactNode;
+};
+
+export default function PageShell({ title, intro, children }: PageShellProps) {
   return (
     <main className="bg-neutral-50">
-      <section className="mx-auto max-w-5xl px-4 py-8 md:px-6 md:py-10">
-        <h1 className="mb-3 text-2xl font-semibold tracking-tight md:text-3xl">
-          {title}
-        </h1>
-        {intro && (
-          <p className="mb-6 max-w-3xl text-sm leading-relaxed text-neutral-800">
-            {intro}
-          </p>
-        )}
-        <div className="space-y-5 text-sm leading-relaxed text-neutral-800">
-          {children}
-        </div>
-      </section>
+      <div className="mx-auto max-w-5xl px-4 py-10">
+        <header className="mb-6">
+          {/* Header breadcrumbs */}
+          <Breadcrumbs />
+          <h1 className="mt-3 text-2xl font-semibold">{title}</h1>
+          {intro && (
+            <p className="mt-2 text-sm text-neutral-800">
+              {intro}
+            </p>
+          )}
+        </header>
+
+        <div className="space-y-10">{children}</div>
+
+        {/* Footer breadcrumbs */}
+        <footer className="mt-12 border-t border-neutral-200 pt-4">
+          <Breadcrumbs small />
+        </footer>
+      </div>
     </main>
   );
 }

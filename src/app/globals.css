@@ -28,3 +28,8 @@ body {
 /* Subtle link hover */
 .prose a{ text-underline-offset:3px; }
 .prose a:hover{ text-decoration-color: rgb(2,132,199); }
+
+/* RSD Whisky – force light colour scheme, avoid auto dark-mode inversion */
+:root {
+  color-scheme: light;
+}

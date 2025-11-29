@@ -11,9 +11,9 @@ export default function PageShell({ title, intro, children }: PageShellProps) {
   const isHome = title === "RSD Whisky";
 
   return (
-    <main>
+    <main className="min-h-screen bg-neutral-50 text-neutral-900">
       <div className="mx-auto max-w-3xl px-4 py-6 sm:py-10">
-        {/* Simple breadcrumb / page label */}
+        {/* Simple breadcrumb for non-home pages */}
         {!isHome && (
           <p className="mb-1 text-xs text-neutral-500">
             <Link
@@ -29,14 +29,14 @@ export default function PageShell({ title, intro, children }: PageShellProps) {
         {/* Page heading */}
         <h1 className="text-2xl font-semibold">{title}</h1>
 
-        {/* Intro text, if provided */}
+        {/* Intro text, if any */}
         {intro && (
           <p className="mt-2 text-sm text-neutral-700">
             {intro}
           </p>
         )}
 
-        {/* Page content */}
+        {/* Main page content */}
         <div className="mt-6 space-y-6">
           {children}
         </div>

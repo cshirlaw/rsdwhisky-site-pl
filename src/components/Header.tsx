@@ -5,15 +5,15 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/our-whisky", label: "Our Whisky" },
-  { href: "/brands", label: "Our Brands" },
+  { href: "/", label: "Strona główna" },
+  { href: "/about", label: "O nas" },
+  { href: "/our-whisky", label: "Nasza whisky" },
+  { href: "/brands", label: "Nasze marki" },
   // RTD hidden for now – page still exists but link removed
   // { href: "/rtd", label: "RTD Drinks" },
-  { href: "/how-we-work", label: "How We Work" },
-  { href: "/whisky-knowledge", label: "Whisky Knowledge" },
-  { href: "/contact", label: "Contact" },
+  { href: "/how-we-work", label: "Jak pracujemy" },
+  { href: "/whisky-knowledge", label: "Wiedza o whisky" },
+  { href: "/contact", label: "Kontakt" },
 ];
 
 export default function Header() {
@@ -22,7 +22,6 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-amber-800/40 bg-[#E5C98E]/95 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
-        {/* Logo / wordmark */}
         <Link href="/" className="flex items-center gap-3">
           <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-[#B58230] bg-black/85">
             <Image
@@ -40,11 +39,7 @@ export default function Header() {
         </Link>
       </div>
 
-      {/* Scrollable nav row */}
-      <nav
-        aria-label="Main"
-        className="border-t border-amber-800/40 bg-[#E5C98E]/95"
-      >
+      <nav aria-label="Main" className="border-t border-amber-800/40 bg-[#E5C98E]/95">
         <div className="mx-auto max-w-5xl px-2 sm:px-4">
           <ul className="flex gap-2 overflow-x-auto py-2 text-xs sm:gap-3 sm:text-sm">
             {navItems.map((item) => {

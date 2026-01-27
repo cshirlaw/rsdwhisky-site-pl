@@ -140,50 +140,7 @@ export default function WhiskyKnowledgePage() {
                 Szkocja tradycyjnie dzieli whisky na pięć regionów: Highlands,
                 Speyside, Islay, Lowlands oraz Campbeltown. Regiony pomagają
                 opisywać styl, ale nie są sztywną regułą — każda destylarnia ma
-                własny charakter, a nowoczesne podejście często wykracza poza
-                stereotypy.
-              </p>
-
-              <p>
-                <strong>Highlands</strong> to największy i najbardziej zróżnicowany
-                region. Znajdziesz tu whisky lekkie i kwiatowe, ale także
-                pełniejsze, oleiste i bardziej wytrawne. W praktyce Highlands
-                oznacza ogromną rozpiętość stylów.
-              </p>
-
-              <p>
-                <strong>Speyside</strong> leży w obrębie Highlands, ale zwyczajowo
-                traktuje się go osobno, bo koncentruje się tu wiele destylarni.
-                Często spotkasz whisky owocowe, słodowe, z nutami miodu, jabłek,
-                gruszek i wanilii, a także styl dojrzewany w beczkach po sherry.
-              </p>
-
-              <p>
-                <strong>Islay</strong> jest znana z torfu i dymu, ale nie cała wyspa
-                smakuje tak samo. Obok mocno torfowych stylów znajdziesz też
-                whisky bardziej morskie, cytrusowe i wytrawne. Wspólnym motywem
-                bywa „nadmorskość”: sól, wodorosty, morska bryza.
-              </p>
-
-              <p>
-                <strong>Lowlands</strong> kojarzą się z lżejszym profilem: delikatne,
-                bardziej ziołowe i kwiatowe whisky, często cenione jako
-                przystępne wstępy do świata szkockiej whisky. To uogólnienie, ale
-                wciąż przydatne jako pierwszy trop.
-              </p>
-
-              <p>
-                <strong>Campbeltown</strong> to najmniejszy region, historycznie
-                bardzo ważny. Klasyczny opis mówi o whisky „oleistej”, słonawej,
-                czasem lekko dymnej, o wyraźnej strukturze. Dziś działa tu
-                niewiele destylarni, ale ich styl jest wyrazisty i ceniony.
-              </p>
-
-              <p>
-                Regiony to wygodny skrót myślowy. Najlepszy sposób, aby je
-                zrozumieć, to spróbować kilku butelek z każdej części Szkocji i
-                porównać wrażenia — a potem pamiętać, że destylarnia i beczka
-                mają często większe znaczenie niż sama mapa.
+                własny charakter.
               </p>
             </div>
           </div>
@@ -196,55 +153,49 @@ export default function WhiskyKnowledgePage() {
             <div className="space-y-4 text-amber-50/95">
               <p>
                 W prawie szkocka whisky dzieli się na kilka podstawowych
-                kategorii. Te definicje są ważne, bo mówią, z czego whisky może
-                powstać i jak wolno ją opisywać na etykiecie.
-              </p>
-
-              <p>
-                <strong>Single Malt Scotch Whisky</strong> pochodzi z jednej
-                destylarni i jest produkowana wyłącznie z jęczmienia słodowanego,
-                destylowana w alembikach. To styl, który kojarzy się z
-                destylarnią jako źródłem charakteru.
-              </p>
-
-              <p>
-                <strong>Single Grain Scotch Whisky</strong> również pochodzi z
-                jednej destylarni, ale może wykorzystywać inne zboża (np.
-                pszenicę, kukurydzę) i zwykle jest destylowana kolumnowo. Często
-                jest lżejsza w profilu i stanowi kluczowy element blended Scotch.
-              </p>
-
-              <p>
-                <strong>Blended Scotch Whisky</strong> to połączenie whisky
-                single malt i whisky single grain z różnych destylarni. To
-                najpopularniejsza kategoria na świecie — projektowana tak, by
-                utrzymać stały styl i jakość w dużej skali.
-              </p>
-
-              <p>
-                <strong>Blended Malt Scotch Whisky</strong> (dawniej „vatted
-                malt”) to mieszanka wyłącznie whisky single malt z różnych
-                destylarni, bez udziału whisky zbożowej.
-              </p>
-
-              <p>
-                <strong>Blended Grain Scotch Whisky</strong> to mieszanka whisky
-                single grain z różnych destylarni, bez udziału single malt. To
-                rzadziej spotykana kategoria, ale ważna w kontekście prawa i
-                opisu stylu.
-              </p>
-
-              <p>
-                W praktyce na smak wpływa nie tylko kategoria, ale też wiek,
-                rodzaj beczek, sposób komponowania oraz decyzje przy rozlewie
-                (moc, filtracja na zimno, barwa). Kategorie są jednak dobrym
-                punktem startu, aby rozumieć etykiety i porównywać butelki.
+                kategorii, które określają sposób produkcji i opisu na
+                etykiecie.
               </p>
             </div>
           </div>
 
           <div>
-            <h2 className="mb-2 text-xl font-semibold">Degustacja whisky</h2>
+            <h2 className="mb-3 text-xl font-semibold">Degustacja whisky</h2>
+
+            <div className="space-y-4 text-amber-50/95">
+              <p>
+                Degustacja whisky nie musi być skomplikowana. Najważniejsze jest
+                poświęcenie chwili uwagi i próba opisania wrażeń bez pośpiechu.
+                Whisky najlepiej degustować w czystej postaci, w temperaturze
+                pokojowej.
+              </p>
+
+              <p>
+                Zacznij od zapachu. Zbliż kieliszek do nosa i wykonaj kilka
+                krótkich, delikatnych wdechów. Aromaty mogą obejmować owoce,
+                przyprawy, wanilię, dąb, dym, torf lub nuty morskie — nie ma
+                „złych” odpowiedzi.
+              </p>
+
+              <p>
+                Następnie weź mały łyk i pozwól whisky rozprowadzić się po
+                języku. Zwróć uwagę na strukturę (lekka, oleista, wytrawna),
+                smak oraz to, jak alkohol jest odczuwalny.
+              </p>
+
+              <p>
+                Kilka kropel wody może otworzyć aromaty i złagodzić alkohol,
+                zwłaszcza w whisky o wyższej mocy. To normalna praktyka, a nie
+                „psucie” whisky.
+              </p>
+
+              <p>
+                Na koniec zwróć uwagę na finisz — jak długo smak pozostaje i
+                jakie nuty pojawiają się po przełknięciu. Degustacja to proces
+                subiektywny: liczy się Twoje doświadczenie, nie gotowe opisy z
+                etykiety.
+              </p>
+            </div>
           </div>
 
           <div>

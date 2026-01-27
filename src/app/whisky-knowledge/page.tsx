@@ -84,9 +84,50 @@ export default function WhiskyKnowledgePage() {
           </div>
 
           <div>
-            <h2 className="mb-2 text-xl font-semibold">
+            <h2 className="mb-3 text-xl font-semibold">
               Jak powstaje szkocka whisky
             </h2>
+
+            <div className="space-y-4 text-amber-50/95">
+              <p>
+                W największym skrócie: zboże zamienia się w alkohol, a potem
+                czas i dąb robią resztę. Najpierw jęczmień (lub inne zboża) jest
+                rozdrabniany i mieszany z gorącą wodą w kadzi zaciernej, aby
+                wydobyć cukry. Powstaje słodka ciecz, nazywana brzeczką.
+              </p>
+
+              <p>
+                Brzeczka trafia do kadzi fermentacyjnych, gdzie dodaje się
+                drożdże. W ciągu kilku dni drożdże zamieniają cukry w alkohol,
+                tworząc „piwo” destylacyjne o niewielkiej mocy i bogatym profilu
+                aromatycznym.
+              </p>
+
+              <p>
+                Następnie odbywa się destylacja. W przypadku single malt używa
+                się miedzianych alembików (zwykle dwukrotnie), a w przypadku
+                whisky zbożowej często stosuje się destylację kolumnową. Na tym
+                etapie powstaje new make — bezbarwny destylat o wysokiej mocy,
+                który ma już rozpoznawalny charakter.
+              </p>
+
+              <p>
+                Potem kluczowy etap: dojrzewanie w dębowych beczkach w Szkocji.
+                Przez lata whisky nabiera barwy, łagodnieje i rozwija aromaty,
+                czerpiąc z drewna oraz z wcześniejszej historii beczki (np.
+                bourbon, sherry, wino). To właśnie beczki mają ogromny wpływ na
+                końcowy styl.
+              </p>
+
+              <p>
+                Na koniec whisky jest komponowana (w przypadku blended Scotch),
+                albo rozlewana jako single malt z jednej destylarni. Może być
+                filtrowana na zimno lub nie, może mieć barwę naturalną albo
+                korygowaną karmelem. Ostatecznie trafia do butelek w ustalonej
+                mocy, najczęściej 40–46% ABV, choć wydania cask strength bywają
+                znacznie wyższe.
+              </p>
+            </div>
           </div>
 
           <div>

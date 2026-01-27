@@ -137,30 +137,50 @@ export default function WhiskyKnowledgePage() {
                 W prawie szkocka whisky dzieli się na kilka podstawowych kategorii. Te definicje są ważne, bo mówią, z
                 czego whisky może powstać i jak wolno ją opisywać na etykiecie.
               </p>
-              <p>
-                <strong>Single Malt Scotch Whisky</strong> pochodzi z jednej destylarni i jest produkowana wyłącznie z
-                jęczmienia słodowanego, destylowana w alembikach. To styl, który kojarzy się z destylarnią jako źródłem
-                charakteru.
-              </p>
-              <p>
-                <strong>Single Grain Scotch Whisky</strong> również pochodzi z jednej destylarni, ale może wykorzystywać
-                inne zboża (np. pszenicę, kukurydzę) i zwykle jest destylowana kolumnowo. Często jest lżejsza w profilu i
-                stanowi kluczowy element blended Scotch.
-              </p>
-              <p>
-                <strong>Blended Scotch Whisky</strong> to połączenie whisky single malt i whisky single grain z różnych
-                destylarni. To najpopularniejsza kategoria na świecie — projektowana tak, by utrzymać stały styl i jakość
-                w dużej skali.
-              </p>
-              <p>
-                <strong>Blended Malt Scotch Whisky</strong> (dawniej „vatted malt”) to mieszanka wyłącznie whisky single
-                malt z różnych destylarni, bez udziału whisky zbożowej.
-              </p>
-              <p>
-                <strong>Blended Grain Scotch Whisky</strong> to mieszanka whisky single grain z różnych destylarni, bez
-                udziału single malt. To rzadziej spotykana kategoria, ale ważna w kontekście prawa i opisu stylu.
-              </p>
-              <p>
+
+              <div className="mt-6 grid gap-5 sm:grid-cols-2">
+                <div className="rounded-2xl border border-black/10 bg-white/90 p-5 shadow-sm">
+                  <div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">SINGLE MALT SCOTCH WHISKY</div>
+                  <p className="mt-3">
+                    Pochodzi z jednej destylarni i jest produkowana wyłącznie z jęczmienia słodowanego, destylowana w
+                    alembikach. To styl kojarzony z destylarnią jako źródłem charakteru.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-black/10 bg-white/90 p-5 shadow-sm">
+                  <div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">SINGLE GRAIN SCOTCH WHISKY</div>
+                  <p className="mt-3">
+                    Również z jednej destylarni, ale może wykorzystywać inne zboża (np. pszenicę, kukurydzę) i zwykle jest
+                    destylowana kolumnowo. Często lżejsza w profilu i ważna dla blended Scotch.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-black/10 bg-white/90 p-5 shadow-sm">
+                  <div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">BLENDED SCOTCH WHISKY</div>
+                  <p className="mt-3">
+                    Połączenie whisky single malt i whisky single grain z różnych destylarni. Najpopularniejsza kategoria
+                    na świecie — projektowana tak, by utrzymać stały styl i jakość w dużej skali.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-black/10 bg-white/90 p-5 shadow-sm">
+                  <div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">BLENDED MALT SCOTCH WHISKY</div>
+                  <p className="mt-3">
+                    (Dawniej „vatted malt”) — mieszanka wyłącznie whisky single malt z różnych destylarni, bez udziału
+                    whisky zbożowej.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-black/10 bg-white/90 p-5 shadow-sm sm:col-span-2">
+                  <div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">BLENDED GRAIN SCOTCH WHISKY</div>
+                  <p className="mt-3">
+                    Mieszanka whisky single grain z różnych destylarni, bez udziału single malt. Rzadziej spotykana, ale
+                    ważna w kontekście prawa i opisu stylu.
+                  </p>
+                </div>
+              </div>
+
+              <p className="mt-6">
                 W praktyce na smak wpływa nie tylko kategoria, ale też wiek, rodzaj beczek, sposób komponowania oraz
                 decyzje przy rozlewie (moc, filtracja na zimno, barwa). Kategorie są jednak dobrym punktem startu, aby
                 rozumieć etykiety i porównywać butelki.

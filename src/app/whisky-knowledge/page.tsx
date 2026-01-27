@@ -189,9 +189,58 @@ export default function WhiskyKnowledgePage() {
           </div>
 
           <div>
-            <h2 className="mb-2 text-xl font-semibold">
+            <h2 className="mb-3 text-xl font-semibold">
               Kategorie szkockiej whisky
             </h2>
+
+            <div className="space-y-4 text-amber-50/95">
+              <p>
+                W prawie szkocka whisky dzieli się na kilka podstawowych
+                kategorii. Te definicje są ważne, bo mówią, z czego whisky może
+                powstać i jak wolno ją opisywać na etykiecie.
+              </p>
+
+              <p>
+                <strong>Single Malt Scotch Whisky</strong> pochodzi z jednej
+                destylarni i jest produkowana wyłącznie z jęczmienia słodowanego,
+                destylowana w alembikach. To styl, który kojarzy się z
+                destylarnią jako źródłem charakteru.
+              </p>
+
+              <p>
+                <strong>Single Grain Scotch Whisky</strong> również pochodzi z
+                jednej destylarni, ale może wykorzystywać inne zboża (np.
+                pszenicę, kukurydzę) i zwykle jest destylowana kolumnowo. Często
+                jest lżejsza w profilu i stanowi kluczowy element blended Scotch.
+              </p>
+
+              <p>
+                <strong>Blended Scotch Whisky</strong> to połączenie whisky
+                single malt i whisky single grain z różnych destylarni. To
+                najpopularniejsza kategoria na świecie — projektowana tak, by
+                utrzymać stały styl i jakość w dużej skali.
+              </p>
+
+              <p>
+                <strong>Blended Malt Scotch Whisky</strong> (dawniej „vatted
+                malt”) to mieszanka wyłącznie whisky single malt z różnych
+                destylarni, bez udziału whisky zbożowej.
+              </p>
+
+              <p>
+                <strong>Blended Grain Scotch Whisky</strong> to mieszanka whisky
+                single grain z różnych destylarni, bez udziału single malt. To
+                rzadziej spotykana kategoria, ale ważna w kontekście prawa i
+                opisu stylu.
+              </p>
+
+              <p>
+                W praktyce na smak wpływa nie tylko kategoria, ale też wiek,
+                rodzaj beczek, sposób komponowania oraz decyzje przy rozlewie
+                (moc, filtracja na zimno, barwa). Kategorie są jednak dobrym
+                punktem startu, aby rozumieć etykiety i porównywać butelki.
+              </p>
+            </div>
           </div>
 
           <div>

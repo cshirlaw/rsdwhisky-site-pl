@@ -188,26 +188,34 @@ export default function WhiskyKnowledgePage() {
             </Section>
 
             <Section id="degustacja-whisky" title="Degustacja whisky">
-              <p>
-                Degustacja whisky nie musi być skomplikowana. Najważniejsze jest poświęcenie chwili uwagi i próba opisania
-                wrażeń bez pośpiechu. Whisky najlepiej degustować w czystej postaci, w temperaturze pokojowej.
-              </p>
-              <p>
-                Zacznij od zapachu. Zbliż kieliszek do nosa i wykonaj kilka krótkich, delikatnych wdechów. Aromaty mogą
-                obejmować owoce, przyprawy, wanilię, dąb, dym, torf lub nuty morskie — nie ma „złych” odpowiedzi.
-              </p>
-              <p>
-                Następnie weź mały łyk i pozwól whisky rozprowadzić się po języku. Zwróć uwagę na strukturę (lekka,
-                oleista, wytrawna), smak oraz to, jak alkohol jest odczuwalny.
-              </p>
-              <p>
-                Kilka kropel wody może otworzyć aromaty i złagodzić alkohol, zwłaszcza w whisky o wyższej mocy. To
-                normalna praktyka, a nie „psucie” whisky.
-              </p>
-              <p>
-                Na koniec zwróć uwagę na finisz — jak długo smak pozostaje i jakie nuty pojawiają się po przełknięciu.
-                Degustacja to proces subiektywny: liczy się Twoje doświadczenie, nie gotowe opisy z etykiety.
-              </p>
+              <p>Degustacja whisky nie musi być skomplikowana. Najważniejsze jest poświęcenie chwili uwagi i próba opisania wrażeń bez pośpiechu.</p>
+
+<div className="mt-6 grid gap-5 sm:grid-cols-2">
+  <div className="rounded-2xl border border-black/10 bg-white/90 p-5 shadow-sm">
+    <div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">1. PRZYGOTUJ</div>
+    <p className="mt-3">Degustuj w temperaturze pokojowej, w czystej postaci. Użyj czystego szkła, bez zapachów detergentów. Najpierw daj whisky chwilę w kieliszku.</p>
+  </div>
+
+  <div className="rounded-2xl border border-black/10 bg-white/90 p-5 shadow-sm">
+    <div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">2. ZAPACH</div>
+    <p className="mt-3">Zbliż kieliszek do nosa i zrób kilka krótkich, delikatnych wdechów. Szukaj nut: owoców, przypraw, wanilii, dębu, dymu, torfu lub morskiej bryzy.</p>
+  </div>
+
+  <div className="rounded-2xl border border-black/10 bg-white/90 p-5 shadow-sm">
+    <div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">3. SMAK</div>
+    <p className="mt-3">Weź mały łyk i pozwól whisky rozprowadzić się po języku. Zwróć uwagę na strukturę (lekka, oleista, wytrawna), intensywność i to, jak alkohol jest odczuwalny.</p>
+  </div>
+
+  <div className="rounded-2xl border border-black/10 bg-white/90 p-5 shadow-sm">
+    <div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">4. KROPLA WODY</div>
+    <p className="mt-3">Kilka kropel wody może otworzyć aromaty i złagodzić alkohol, zwłaszcza przy wyższej mocy. To normalna praktyka, a nie „psucie” whisky.</p>
+  </div>
+
+  <div className="rounded-2xl border border-black/10 bg-white/90 p-5 shadow-sm sm:col-span-2">
+    <div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">5. FINISZ I NOTATKA</div>
+    <p className="mt-3">Zwróć uwagę na finisz — jak długo smak zostaje i jakie nuty pojawiają się po przełknięciu. Degustacja jest subiektywna: liczy się Twoje doświadczenie, nie gotowe opisy z etykiety.</p>
+  </div>
+</div>
             </Section>
 
             <Section id="szklo-do-whisky" title="Szkło do whisky">

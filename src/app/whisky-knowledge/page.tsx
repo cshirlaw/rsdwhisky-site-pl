@@ -43,8 +43,20 @@ export default function WhiskyKnowledgePage() {
             <li>• Pięć regionów szkockiej whisky</li>
             <li>• Kategorie szkockiej whisky</li>
             <li>• Degustacja whisky</li>
-            <li>• Szkło do whisky</li>
-            <li>• Szkocka whisky w prawie — podstawy</li>
+            <li>• Szkło do whisky
+
+Nie istnieje jedno „idealne” szkło do whisky, ale kształt naczynia ma wpływ na sposób, w jaki odbieramy aromaty i smak.
+
+Najczęściej polecane jest szkło typu tulipan (np. Glencairn), które zwęża się ku górze. Taki kształt skupia aromaty i ułatwia ich ocenę, dlatego jest standardem podczas degustacji i pracy profesjonalnej.
+
+Klasyczna szklanka typu tumbler (lowball) jest wygodna i popularna, szczególnie przy whisky podawanej z lodem lub w koktajlach. Jest mniej precyzyjna aromatycznie, ale w pełni akceptowalna do codziennego picia.
+
+Do whisky o wyższej mocy lub cask strength warto używać mniejszych kieliszków degustacyjnych, które pozwalają kontrolować intensywność alkoholu i dodawanie wody.
+
+Najważniejsze jest jednak to, aby szkło było czyste, bez zapachów detergentów, i aby pozwalało pić whisky spokojnie. Szkło powinno pomagać w odbiorze, a nie narzucać sposób picia.
+
+
+Szkocka whisky w prawie — podstawy</li>
           </ul>
         </section>
 

@@ -33,7 +33,7 @@ export default function WhiskyKnowledgePage() {
           </p>
         </header>
 
-        <section className="mb-10 rounded-2xl border border-amber-200/20 /40 p-5 backdrop-blur">
+        <section className="mb-10 rounded-2xl border border-amber-200/25 bg-black/35 p-5 backdrop-blur-md shadow-[0_18px_60px_-28px_rgba(0,0,0,0.55)] ring-1 ring-black/40">
           <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-amber-200">
             Na tej stronie
           </h2>

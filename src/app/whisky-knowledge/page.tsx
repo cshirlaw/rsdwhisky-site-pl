@@ -4,7 +4,7 @@ export default function WhiskyKnowledgePage() {
   return (
     <main className="relative min-h-screen px-4 py-8 sm:px-6 lg:px-8">
       <div
-        className="pointer-events-none absolute inset-0 -z-10 bg-black"
+        className="pointer-events-none absolute inset-0 -z-10 "
         style={{
           backgroundImage: "url(/images/edinburgh-night-1.jpeg)",
           backgroundSize: "cover",
@@ -12,7 +12,7 @@ export default function WhiskyKnowledgePage() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 /70" />
       </div>
 
       <div className="mx-auto max-w-5xl text-amber-50">
@@ -33,7 +33,7 @@ export default function WhiskyKnowledgePage() {
           </p>
         </header>
 
-        <section className="mb-10 rounded-2xl border border-amber-200/20 bg-black/40 p-5 backdrop-blur">
+        <section className="mb-10 rounded-2xl border border-amber-200/20 /40 p-5 backdrop-blur">
           <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-amber-200">
             Na tej stronie
           </h2>

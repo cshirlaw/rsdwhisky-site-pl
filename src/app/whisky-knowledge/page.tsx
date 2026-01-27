@@ -103,31 +103,28 @@ export default function WhiskyKnowledgePage() {
                 Regiony pomagają opisywać styl, ale nie są sztywną regułą — każda destylarnia ma własny charakter, a
                 nowoczesne podejście często wykracza poza stereotypy.
               </p>
-              <p>
-                <strong>Highlands</strong> to największy i najbardziej zróżnicowany region. Znajdziesz tu whisky lekkie i
-                kwiatowe, ale także pełniejsze, oleiste i bardziej wytrawne. W praktyce Highlands oznacza ogromną
-                rozpiętość stylów.
-              </p>
-              <p>
-                <strong>Speyside</strong> leży w obrębie Highlands, ale zwyczajowo traktuje się go osobno, bo koncentruje
-                się tu wiele destylarni. Często spotkasz whisky owocowe, słodowe, z nutami miodu, jabłek, gruszek i
-                wanilii, a także styl dojrzewany w beczkach po sherry.
-              </p>
-              <p>
-                <strong>Islay</strong> jest znana z torfu i dymu, ale nie cała wyspa smakuje tak samo. Obok mocno
-                torfowych stylów znajdziesz też whisky bardziej morskie, cytrusowe i wytrawne. Wspólnym motywem bywa
-                „nadmorskość”: sól, wodorosty, morska bryza.
-              </p>
-              <p>
-                <strong>Lowlands</strong> kojarzą się z lżejszym profilem: delikatne, bardziej ziołowe i kwiatowe whisky,
-                często cenione jako przystępne wstępy do świata szkockiej whisky. To uogólnienie, ale wciąż przydatne
-                jako pierwszy trop.
-              </p>
-              <p>
-                <strong>Campbeltown</strong> to najmniejszy region, historycznie bardzo ważny. Klasyczny opis mówi o
-                whisky „oleistej”, słonawej, czasem lekko dymnej, o wyraźnej strukturze. Dziś działa tu niewiele
-                destylarni, ale ich styl jest wyrazisty i ceniony.
-              </p>
+              <div className="not-prose mt-5 grid gap-4 sm:grid-cols-2">
+<div className="rounded-2xl border border-black/10 bg-white/75 p-5 shadow-[0_16px_45px_-30px_rgba(0,0,0,0.35)] ring-1 ring-black/5">
+<div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">HIGHLANDS</div>
+<p className="mt-2 text-sm leading-6 text-[#303030]">to największy i najbardziej zróżnicowany region. Znajdziesz tu whisky lekkie i kwiatowe, ale także pełniejsze, oleiste i bardziej wytrawne. W praktyce Highlands oznacza ogromną rozpiętość stylów.</p>
+</div>
+<div className="rounded-2xl border border-black/10 bg-white/75 p-5 shadow-[0_16px_45px_-30px_rgba(0,0,0,0.35)] ring-1 ring-black/5">
+<div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">SPEYSIDE</div>
+<p className="mt-2 text-sm leading-6 text-[#303030]">leży w obrębie Highlands, ale zwyczajowo traktuje się go osobno, bo koncentruje się tu wiele destylarni. Często spotkasz whisky owocowe, słodowe, z nutami miodu, jabłek, gruszek i wanilii, a także styl dojrzewany w beczkach po sherry.</p>
+</div>
+<div className="rounded-2xl border border-black/10 bg-white/75 p-5 shadow-[0_16px_45px_-30px_rgba(0,0,0,0.35)] ring-1 ring-black/5">
+<div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">ISLAY</div>
+<p className="mt-2 text-sm leading-6 text-[#303030]">jest znana z torfu i dymu, ale nie cała wyspa smakuje tak samo. Obok mocno torfowych stylów znajdziesz też whisky bardziej morskie, cytrusowe i wytrawne. Wspólnym motywem bywa „nadmorskość”: sól, wodorosty, morska bryza.</p>
+</div>
+<div className="rounded-2xl border border-black/10 bg-white/75 p-5 shadow-[0_16px_45px_-30px_rgba(0,0,0,0.35)] ring-1 ring-black/5">
+<div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">LOWLANDS</div>
+<p className="mt-2 text-sm leading-6 text-[#303030]">kojarzą się z lżejszym profilem: delikatne, bardziej ziołowe i kwiatowe whisky, często cenione jako przystępne wstępy do świata szkockiej whisky. To uogólnienie, ale wciąż przydatne jako pierwszy trop.</p>
+</div>
+<div className="rounded-2xl border border-black/10 bg-white/75 p-5 shadow-[0_16px_45px_-30px_rgba(0,0,0,0.35)] ring-1 ring-black/5 sm:col-span-2">
+<div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">CAMPBELTOWN</div>
+<p className="mt-2 text-sm leading-6 text-[#303030]">to najmniejszy region, historycznie bardzo ważny. Klasyczny opis mówi o whisky „oleistej”, słonawej, czasem lekko dymnej, o wyraźnej strukturze. Dziś działa tu niewiele destylarni, ale ich styl jest wyrazisty i ceniony.</p>
+</div>
+</div>
               <p>
                 Regiony to wygodny skrót myślowy. Najlepszy sposób, aby je zrozumieć, to spróbować kilku butelek z każdej
                 części Szkocji i porównać wrażenia — a potem pamiętać, że destylarnia i beczka mają często większe

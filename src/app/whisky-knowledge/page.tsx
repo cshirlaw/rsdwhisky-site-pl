@@ -31,7 +31,7 @@ export default function WhiskyKnowledgePage() {
 
         <div className="mt-8 grid gap-6 lg:grid-cols-12">
           <aside className="lg:col-span-4">
-            <div className="sticky top-24 rounded-2xl bg-gradient-to-b from-white/92 to-white/78 p-5 shadow-[0_22px_70px_-40px_rgba(0,0,0,0.30)] ring-1 ring-black/10 border border-black/5 backdrop-blur transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_26px_90px_-48px_rgba(0,0,0,0.34)]">
+            <div className="sticky top-24 rounded-2xl bg-gradient-to-b from-white/92 to-white/78 p-5 shadow-[0_8px_28px_-16px_rgba(0,0,0,0.25)] ring-1 ring-black/10 border border-black/5 backdrop-blur transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_22px_70px_-32px_rgba(0,0,0,0.35)] hover:shadow-[0_8px_28px_-16px_rgba(0,0,0,0.25)]">
               <div className="text-xs font-semibold tracking-wider text-[#8a6a1f]">NA TEJ STRONIE</div>
               <ul className="mt-3 space-y-2 text-sm">
                 {toc.map((t) => (
@@ -231,7 +231,7 @@ function Section({ id, title, children }: { id: string; title: string; children:
   return (
     <section
       id={id}
-      className="rounded-2xl bg-gradient-to-b from-white/92 to-white/78 p-6 shadow-[0_22px_70px_-40px_rgba(0,0,0,0.30)] ring-1 ring-black/10 border border-black/5 backdrop-blur transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_26px_90px_-48px_rgba(0,0,0,0.34)]"
+      className="rounded-2xl bg-gradient-to-b from-white/92 to-white/78 p-6 shadow-[0_8px_28px_-16px_rgba(0,0,0,0.25)] ring-1 ring-black/10 border border-black/5 backdrop-blur transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_22px_70px_-32px_rgba(0,0,0,0.35)] hover:shadow-[0_8px_28px_-16px_rgba(0,0,0,0.25)]"
     >
       <h2 className="text-2xl font-semibold tracking-tight text-[#171717]">{title}</h2>
       <div className="prose prose-neutral mt-4 max-w-none leading-7">{children}</div>

@@ -50,53 +50,71 @@ export default function WhiskyKnowledgePage() {
 
           <div className="lg:col-span-8 space-y-6">
             <Section id="czym-jest-szkocka-whisky" title="Czym jest szkocka whisky">
-              <p>
-                Szkocka whisky ma status chroniony prawem. Musi powstawać w Szkocji z wody, zbóż i drożdży oraz
-                dojrzewać w dębowych beczkach w Szkocji przez co najmniej trzy lata. Do gotowego alkoholu nie wolno
-                dodawać niczego poza wodą oraz niewielką ilością karmelu do korekty barwy.
-              </p>
-              <p>
-                O szkockiej whisky często mówi się tak, jakby chodziło głównie o single malt. W praktyce jednak słowo
-                „Scotch” oznacza <strong>blended Scotch</strong>.
-              </p>
-              <p>
-                To właśnie ten styl pije się na świecie najczęściej — jest to połączenie whisky single malt i whisky
-                single grain, tworzone tak, aby zachować powtarzalny charakter oraz stabilną jakość.
-              </p>
-              <p>
-                Single malty funkcjonują obok tego jako odrębne wyroby z pojedynczych destylarni. Są ważne same w sobie,
-                ale w skali globalnej pozostają mniejszą częścią rynku.
-              </p>
-            </Section>
+              <div className="prose prose-neutral max-w-none prose-p:leading-7 prose-li:leading-7">
+                <p>
+                  Szkocka whisky ma status <strong>chroniony prawem</strong>. Musi powstawać w Szkocji z <strong>wody, zbóż i drożdży</strong>,
+                  a następnie <strong>dojrzewać w dębowych beczkach</strong> w Szkocji przez <strong>co najmniej trzy lata</strong>.
+                </p>
 
+                <p>
+                  Do gotowego alkoholu nie wolno dodawać niczego poza <strong>wodą</strong> oraz niewielką ilością <strong>karmelu</strong> do korekty barwy.
+                </p>
+
+                <p>
+                  O szkockiej whisky często mówi się tak, jakby chodziło głównie o single malt. W praktyce jednak słowo
+                  „Scotch” oznacza <strong>blended Scotch</strong>.
+                </p>
+
+                <ul className="mt-4 list-disc pl-5 space-y-2">
+                  <li>
+                    To najczęściej pijany styl na świecie — <strong>połączenie whisky single malt i whisky single grain</strong>.
+                  </li>
+                  <li>
+                    Tworzony tak, aby zachować <strong>powtarzalny charakter</strong> oraz <strong>stabilną jakość</strong>.
+                  </li>
+                </ul>
+
+                <p className="mt-4">
+                  Single malty funkcjonują obok tego jako odrębne wyroby z pojedynczych destylarni. Są ważne same w sobie,
+                  ale w skali globalnej pozostają <strong>mniejszą częścią rynku</strong>.
+                </p>
+              </div>
+            </Section>
             <Section id="jak-powstaje-szkocka-whisky" title="Jak powstaje szkocka whisky">
-              <p>
-                W największym skrócie: zboże zamienia się w alkohol, a potem czas i dąb robią resztę. Najpierw jęczmień
-                (lub inne zboża) jest rozdrabniany i mieszany z gorącą wodą w kadzi zaciernej, aby wydobyć cukry.
-                Powstaje słodka ciecz, nazywana brzeczką.
-              </p>
-              <p>
-                Brzeczka trafia do kadzi fermentacyjnych, gdzie dodaje się drożdże. W ciągu kilku dni drożdże zamieniają
-                cukry w alkohol, tworząc „piwo” destylacyjne o niewielkiej mocy i bogatym profilu aromatycznym.
-              </p>
-              <p>
-                Następnie odbywa się destylacja. W przypadku single malt używa się miedzianych alembików (zwykle
-                dwukrotnie), a w przypadku whisky zbożowej często stosuje się destylację kolumnową. Na tym etapie
-                powstaje new make — bezbarwny destylat o wysokiej mocy, który ma już rozpoznawalny charakter.
-              </p>
-              <p>
-                Potem kluczowy etap: dojrzewanie w dębowych beczkach w Szkocji. Przez lata whisky nabiera barwy,
-                łagodnieje i rozwija aromaty, czerpiąc z drewna oraz z wcześniejszej historii beczki (np. bourbon,
-                sherry, wino). To właśnie beczki mają ogromny wpływ na końcowy styl.
-              </p>
-              <p>
-                Na koniec whisky jest komponowana (w przypadku blended Scotch), albo rozlewana jako single malt z jednej
-                destylarni. Może być filtrowana na zimno lub nie, może mieć barwę naturalną albo korygowaną karmelem.
-                Ostatecznie trafia do butelek w ustalonej mocy, najczęściej 40–46% ABV, choć wydania cask strength bywają
-                znacznie wyższe.
-              </p>
-            </Section>
+              <div className="prose prose-neutral max-w-none prose-p:leading-7 prose-li:leading-7">
+                <p>
+                  W największym skrócie: <strong>zboże zamienia się w alkohol</strong>, a potem <strong>czas i dąb</strong> robią resztę.
+                </p>
 
+                <p>
+                  Najpierw jęczmień (lub inne zboża) jest rozdrabniany i mieszany z gorącą wodą w kadzi zaciernej, aby wydobyć cukry.
+                  Powstaje słodka ciecz, nazywana <strong>brzeczką</strong>.
+                </p>
+
+                <p>
+                  Brzeczka trafia do kadzi fermentacyjnych, gdzie dodaje się drożdże. W ciągu kilku dni drożdże zamieniają cukry w alkohol,
+                  tworząc „piwo” destylacyjne o niewielkiej mocy i bogatym profilu aromatycznym.
+                </p>
+
+                <p>
+                  Następnie odbywa się <strong>destylacja</strong>. W przypadku single malt używa się miedzianych alembików (zwykle dwukrotnie),
+                  a w przypadku whisky zbożowej często stosuje się destylację kolumnową. Na tym etapie powstaje <strong>new make</strong> —
+                  bezbarwny destylat o wysokiej mocy, który ma już rozpoznawalny charakter.
+                </p>
+
+                <p>
+                  Potem kluczowy etap: <strong>dojrzewanie w dębowych beczkach w Szkocji</strong>. Przez lata whisky nabiera barwy,
+                  łagodnieje i rozwija aromaty, czerpiąc z drewna oraz z wcześniejszej historii beczki (np. bourbon, sherry, wino).
+                  To właśnie beczki mają ogromny wpływ na końcowy styl.
+                </p>
+
+                <p>
+                  Na koniec whisky jest <strong>komponowana</strong> (w przypadku blended Scotch) albo rozlewana jako single malt z jednej destylarni.
+                  Może być filtrowana na zimno lub nie, może mieć barwę naturalną albo korygowaną karmelem. Ostatecznie trafia do butelek
+                  w ustalonej mocy — najczęściej <strong>40–46% ABV</strong>, choć wydania <strong>cask strength</strong> bywają znacznie wyższe.
+                </p>
+              </div>
+            </Section>
             <Section id="piec-regionow-szkockiej-whisky" title="Pięć regionów szkockiej whisky">
               <p>
                 Szkocja tradycyjnie dzieli whisky na pięć regionów: Highlands, Speyside, Islay, Lowlands oraz Campbeltown.
@@ -220,42 +238,59 @@ export default function WhiskyKnowledgePage() {
 
             
             <Section id="szklo-do-whisky" title="Szkło do whisky">
-              <p>Dobre szkło ułatwia degustację, ale nie musi być skomplikowane.</p>
+              <div className="prose prose-neutral max-w-none prose-p:leading-7 prose-li:leading-7">
+                <p>Dobre szkło ułatwia degustację, ale nie musi być skomplikowane.</p>
 
-              <ul className="mt-4 space-y-2">
-                <li>
-                  Dla degustacji najlepiej sprawdza się <strong>kieliszek w kształcie tulipana</strong> (np. Glencairn), który skupia aromaty.
-                </li>
-                <li>Dla long drinków i highballi wygodna jest <strong>wysoka, prosta szklanka</strong>.</li>
-                <li><strong>Prosty tumbler</strong> (lowball) jest nadal całkowicie dobrym sposobem, aby cieszyć się whisky w domu.</li>
-              </ul>
+                <ul className="mt-4 list-disc pl-5 space-y-2">
+                  <li>
+                    Dla degustacji najlepiej sprawdza się <strong>kieliszek w kształcie tulipana</strong> (np. Glencairn),
+                    który <strong>skupia aromaty</strong>.
+                  </li>
+                  <li>
+                    Dla long drinków i highballi wygodna jest <strong>wysoka, prosta szklanka</strong>.
+                  </li>
+                  <li>
+                    <strong>Prosty tumbler</strong> (lowball) jest nadal całkowicie dobrym sposobem, aby cieszyć się whisky w domu.
+                  </li>
+                </ul>
 
-              <p className="mt-4">
-                Przy projektach prestiżowych współpracujemy ze specjalistami od szkła (np. Glencairn Crystal) oraz doradzamy
-                w doborze szkła do indywidualnych realizacji.
-              </p>
+                <p className="mt-4">
+                  Przy projektach prestiżowych współpracujemy ze specjalistami od szkła (np. Glencairn Crystal) oraz doradzamy
+                  w doborze szkła do indywidualnych realizacji.
+                </p>
+              </div>
             </Section>
-
 
             
             <Section id="szkocka-whisky-w-prawie-podstawy" title="Szkocka whisky w prawie — podstawy">
-              <p>Kilka kluczowych punktów z przepisów o Scotch Whisky (oraz powiązanych zasad):</p>
+              <div className="prose prose-neutral max-w-none prose-p:leading-7 prose-li:leading-7">
+                <p>Kilka kluczowych punktów z przepisów o Scotch Whisky (oraz powiązanych zasad):</p>
 
-              <ul className="mt-4 space-y-2">
-                <li>
-                  Szkocka whisky musi być <strong>destylowana i dojrzewać w Szkocji</strong> przez <strong>co najmniej trzy lata</strong> w dębowych beczkach.
-                </li>
-                <li>Musi być butelkowana z <strong>minimalną mocą 40%</strong> alkoholu objętościowo.</li>
-                <li>Można dodać wyłącznie <strong>wodę</strong> oraz <strong>zwykły karmel barwiący</strong>.</li>
-                <li>
-                  Etykieta musi jasno wskazywać <strong>kategorię</strong>, a każda deklaracja wieku musi odnosić się do <strong>najmłodszej whisky</strong> w butelce.
-                </li>
-                <li>Słowo <strong>„Scotch”</strong> jest chronione i może być używane wyłącznie dla whisky spełniającej te standardy.</li>
-              </ul>
+                <ul className="mt-4 list-disc pl-5 space-y-2">
+                  <li>
+                    Szkocka whisky musi być <strong>destylowana i dojrzewać w Szkocji</strong> przez <strong>co najmniej trzy lata</strong>
+                    w dębowych beczkach.
+                  </li>
+                  <li>
+                    Musi być butelkowana z <strong>minimalną mocą 40%</strong> alkoholu objętościowo.
+                  </li>
+                  <li>
+                    Można dodać wyłącznie <strong>wodę</strong> oraz <strong>zwykły karmel barwiący</strong>.
+                  </li>
+                  <li>
+                    Etykieta musi jasno wskazywać <strong>kategorię</strong>, a każda deklaracja wieku musi odnosić się do
+                    <strong> najmłodszej whisky</strong> w butelce.
+                  </li>
+                  <li>
+                    Słowo <strong>„Scotch”</strong> jest chronione i może być używane wyłącznie dla whisky spełniającej te standardy.
+                  </li>
+                </ul>
 
-              <p className="mt-4">Te zasady chronią reputację Scotch i pomagają konsumentom rozumieć, co kupują.</p>
+                <p className="mt-4">
+                  Te zasady chronią reputację Scotch i pomagają konsumentom rozumieć, co kupują.
+                </p>
+              </div>
             </Section>
-
           </div>
         </div>
       </div>

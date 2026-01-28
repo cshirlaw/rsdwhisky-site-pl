@@ -13,7 +13,7 @@ const toc = [
 
 export default function WhiskyKnowledgePage() {
   return (
-    <main className="min-h-screen bg-[#f6f0e3]">
+    <main className="scroll-mt-28 min-h-screen bg-[#f6f0e3]">
       <div className="mx-auto max-w-6xl px-4 pb-20 pt-10">
         <nav className="text-sm text-[#8a6a1f]">
           <Link href="/" className="hover:underline underline-offset-4">
@@ -256,7 +256,7 @@ function Section({ id, title, children }: { id: string; title: string; children:
   return (
     <section
       id={id}
-      className="rounded-2xl bg-gradient-to-b from-white/92 to-white/78 p-6 shadow-[0_8px_28px_-16px_rgba(0,0,0,0.25)] ring-1 ring-black/10 border border-black/5 backdrop-blur transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_22px_70px_-32px_rgba(0,0,0,0.35)] hover:shadow-[0_8px_28px_-16px_rgba(0,0,0,0.25)]"
+      className="scroll-mt-28 rounded-2xl bg-gradient-to-b from-white/92 to-white/78 p-6 shadow-[0_8px_28px_-16px_rgba(0,0,0,0.25)] ring-1 ring-black/10 border border-black/5 backdrop-blur transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_22px_70px_-32px_rgba(0,0,0,0.35)] hover:shadow-[0_8px_28px_-16px_rgba(0,0,0,0.25)]"
     >
       <h2 className="text-2xl font-semibold tracking-tight text-[#171717]">{title}</h2>
       <div className="prose prose-neutral mt-4 max-w-none leading-7">{children}</div>

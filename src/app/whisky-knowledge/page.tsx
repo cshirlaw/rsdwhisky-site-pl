@@ -52,17 +52,21 @@ export default function WhiskyKnowledgePage() {
             <Section id="czym-jest-szkocka-whisky" title="Czym jest szkocka whisky">
               <div className="prose prose-neutral max-w-none prose-p:leading-7 prose-li:leading-7">
                 <p>
-                  Szkocka whisky ma status <strong>chroniony prawem</strong>. Musi powstawać w Szkocji z <strong>wody, zbóż i drożdży</strong>,
-                  a następnie <strong>dojrzewać w dębowych beczkach</strong> w Szkocji przez <strong>co najmniej trzy lata</strong>.
+                  Szkocka whisky ma status <strong>chroniony prawem</strong> i musi powstawać w <strong>Szkocji</strong>.
                 </p>
 
-                <p>
-                  Do gotowego alkoholu nie wolno dodawać niczego poza <strong>wodą</strong> oraz niewielką ilością <strong>karmelu</strong> do korekty barwy.
-                </p>
+                <div className="not-prose mt-4 rounded-2xl border border-black/10 bg-white/70 p-4 ring-1 ring-black/5">
+                  <div className="text-xs font-semibold tracking-[0.14em] text-amber-900/80">W SKRÓCIE</div>
+                  <ul className="mt-2 list-disc pl-5 space-y-1 text-sm leading-6 text-[#303030]">
+                    <li>Składniki: <strong>woda, zboża, drożdże</strong>.</li>
+                    <li>Dojrzewanie: <strong>dębowe beczki</strong> w Szkocji przez <strong>min. 3 lata</strong>.</li>
+                    <li>Dodatki: tylko <strong>woda</strong> oraz niewielka ilość <strong>karmelu</strong> do korekty barwy.</li>
+                  </ul>
+                </div>
 
-                <p>
+                <p className="mt-5">
                   O szkockiej whisky często mówi się tak, jakby chodziło głównie o single malt. W praktyce jednak słowo
-                  „Scotch” oznacza <strong>blended Scotch</strong>.
+                  <strong> „Scotch”</strong> najczęściej oznacza <strong>blended Scotch</strong>.
                 </p>
 
                 <ul className="mt-4 list-disc pl-5 space-y-2">
@@ -75,47 +79,48 @@ export default function WhiskyKnowledgePage() {
                 </ul>
 
                 <p className="mt-4">
-                  Single malty funkcjonują obok tego jako odrębne wyroby z pojedynczych destylarni. Są ważne same w sobie,
+                  Single malty funkcjonują obok tego jako wyroby z pojedynczych destylarni. Są ważne same w sobie,
                   ale w skali globalnej pozostają <strong>mniejszą częścią rynku</strong>.
                 </p>
               </div>
             </Section>
-            <Section id="jak-powstaje-szkocka-whisky" title="Jak powstaje szkocka whisky">
+
+<Section id="jak-powstaje-szkocka-whisky" title="Jak powstaje szkocka whisky">
               <div className="prose prose-neutral max-w-none prose-p:leading-7 prose-li:leading-7">
                 <p>
                   W największym skrócie: <strong>zboże zamienia się w alkohol</strong>, a potem <strong>czas i dąb</strong> robią resztę.
                 </p>
 
-                <p>
-                  Najpierw jęczmień (lub inne zboża) jest rozdrabniany i mieszany z gorącą wodą w kadzi zaciernej, aby wydobyć cukry.
-                  Powstaje słodka ciecz, nazywana <strong>brzeczką</strong>.
-                </p>
+                <div className="not-prose mt-4 rounded-2xl border border-black/10 bg-white/70 p-4 ring-1 ring-black/5">
+                  <div className="text-xs font-semibold tracking-[0.14em] text-amber-900/80">KROK PO KROKU</div>
+                  <ol className="mt-2 list-decimal pl-5 space-y-1 text-sm leading-6 text-[#303030]">
+                    <li>
+                      Zacieranie: zboże + gorąca woda → <strong>brzeczka</strong>.
+                    </li>
+                    <li>
+                      Fermentacja: brzeczka + drożdże → „piwo” destylacyjne.
+                    </li>
+                    <li>
+                      Destylacja: alembiki (single malt) lub kolumny (grain) → <strong>new make</strong>.
+                    </li>
+                    <li>
+                      Dojrzewanie: <strong>dębowe beczki w Szkocji</strong> przez lata (np. po bourbonie, sherry, winie).
+                    </li>
+                    <li>
+                      Rozlew: <strong>blended</strong> (komponowanie) lub single malt z destylarni; zwykle <strong>40–46% ABV</strong>,
+                      a wydania <strong>cask strength</strong> bywają wyższe.
+                    </li>
+                  </ol>
+                </div>
 
-                <p>
-                  Brzeczka trafia do kadzi fermentacyjnych, gdzie dodaje się drożdże. W ciągu kilku dni drożdże zamieniają cukry w alkohol,
-                  tworząc „piwo” destylacyjne o niewielkiej mocy i bogatym profilu aromatycznym.
-                </p>
-
-                <p>
-                  Następnie odbywa się <strong>destylacja</strong>. W przypadku single malt używa się miedzianych alembików (zwykle dwukrotnie),
-                  a w przypadku whisky zbożowej często stosuje się destylację kolumnową. Na tym etapie powstaje <strong>new make</strong> —
-                  bezbarwny destylat o wysokiej mocy, który ma już rozpoznawalny charakter.
-                </p>
-
-                <p>
-                  Potem kluczowy etap: <strong>dojrzewanie w dębowych beczkach w Szkocji</strong>. Przez lata whisky nabiera barwy,
-                  łagodnieje i rozwija aromaty, czerpiąc z drewna oraz z wcześniejszej historii beczki (np. bourbon, sherry, wino).
-                  To właśnie beczki mają ogromny wpływ na końcowy styl.
-                </p>
-
-                <p>
-                  Na koniec whisky jest <strong>komponowana</strong> (w przypadku blended Scotch) albo rozlewana jako single malt z jednej destylarni.
-                  Może być filtrowana na zimno lub nie, może mieć barwę naturalną albo korygowaną karmelem. Ostatecznie trafia do butelek
-                  w ustalonej mocy — najczęściej <strong>40–46% ABV</strong>, choć wydania <strong>cask strength</strong> bywają znacznie wyższe.
+                <p className="mt-5">
+                  Największy wpływ na końcowy styl ma zwykle <strong>beczka</strong> i czas dojrzewania — to tam whisky nabiera barwy,
+                  łagodnieje i rozwija aromaty.
                 </p>
               </div>
             </Section>
-            <Section id="piec-regionow-szkockiej-whisky" title="Pięć regionów szkockiej whisky">
+
+<Section id="piec-regionow-szkockiej-whisky" title="Pięć regionów szkockiej whisky">
               <p>
                 Szkocja tradycyjnie dzieli whisky na pięć regionów: Highlands, Speyside, Islay, Lowlands oraz Campbeltown.
                 Regiony pomagają opisywać styl, ale nie są sztywną regułą — każda destylarnia ma własny charakter, a

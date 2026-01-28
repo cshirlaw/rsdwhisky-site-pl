@@ -13,7 +13,7 @@ const toc = [
 
 export default function WhiskyKnowledgePage() {
   return (
-    <main className="scroll-mt-28 min-h-screen bg-[#f6f0e3]">
+    <main className="min-h-screen bg-[#f6f0e3]">
       <div className="mx-auto max-w-6xl px-4 pb-20 pt-10">
         <nav className="text-sm text-[#8a6a1f]">
           <Link href="/" className="hover:underline underline-offset-4">

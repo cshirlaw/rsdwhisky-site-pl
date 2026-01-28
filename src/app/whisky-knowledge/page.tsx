@@ -218,33 +218,44 @@ export default function WhiskyKnowledgePage() {
 </div>
             </Section>
 
+            
             <Section id="szklo-do-whisky" title="Szkło do whisky">
-              <p>
-                Nie istnieje jedno „idealne” szkło do whisky, ale kształt naczynia ma wpływ na sposób, w jaki odbieramy
-                aromaty i smak.
-              </p>
-              <p>
-                Najczęściej polecane jest szkło typu tulipan (np. Glencairn), które zwęża się ku górze. Taki kształt
-                skupia aromaty i ułatwia ich ocenę, dlatego jest standardem podczas degustacji i pracy profesjonalnej.
-              </p>
-              <p>
-                Klasyczna szklanka typu tumbler (lowball) jest wygodna i popularna, szczególnie przy whisky podawanej z
-                lodem lub w koktajlach. Jest mniej precyzyjna aromatycznie, ale w pełni akceptowalna do codziennego
-                picia.
-              </p>
-              <p>
-                Do whisky o wyższej mocy lub cask strength warto używać mniejszych kieliszków degustacyjnych, które
-                pozwalają kontrolować intensywność alkoholu i dodawanie wody.
-              </p>
-              <p>
-                Najważniejsze jest jednak to, aby szkło było czyste, bez zapachów detergentów, i aby pozwalało pić whisky
-                spokojnie. Szkło powinno pomagać w odbiorze, a nie narzucać sposób picia.
+              <p>Dobre szkło ułatwia degustację, ale nie musi być skomplikowane.</p>
+
+              <ul className="mt-4 space-y-2">
+                <li>
+                  Dla degustacji najlepiej sprawdza się <strong>kieliszek w kształcie tulipana</strong> (np. Glencairn), który skupia aromaty.
+                </li>
+                <li>Dla long drinków i highballi wygodna jest <strong>wysoka, prosta szklanka</strong>.</li>
+                <li><strong>Prosty tumbler</strong> (lowball) jest nadal całkowicie dobrym sposobem, aby cieszyć się whisky w domu.</li>
+              </ul>
+
+              <p className="mt-4">
+                Przy projektach prestiżowych współpracujemy ze specjalistami od szkła (np. Glencairn Crystal) oraz doradzamy
+                w doborze szkła do indywidualnych realizacji.
               </p>
             </Section>
 
+
+            
             <Section id="szkocka-whisky-w-prawie-podstawy" title="Szkocka whisky w prawie — podstawy">
-              <p>Treść w przygotowaniu.</p>
+              <p>Kilka kluczowych punktów z przepisów o Scotch Whisky (oraz powiązanych zasad):</p>
+
+              <ul className="mt-4 space-y-2">
+                <li>
+                  Szkocka whisky musi być <strong>destylowana i dojrzewać w Szkocji</strong> przez <strong>co najmniej trzy lata</strong> w dębowych beczkach.
+                </li>
+                <li>Musi być butelkowana z <strong>minimalną mocą 40%</strong> alkoholu objętościowo.</li>
+                <li>Można dodać wyłącznie <strong>wodę</strong> oraz <strong>zwykły karmel barwiący</strong>.</li>
+                <li>
+                  Etykieta musi jasno wskazywać <strong>kategorię</strong>, a każda deklaracja wieku musi odnosić się do <strong>najmłodszej whisky</strong> w butelce.
+                </li>
+                <li>Słowo <strong>„Scotch”</strong> jest chronione i może być używane wyłącznie dla whisky spełniającej te standardy.</li>
+              </ul>
+
+              <p className="mt-4">Te zasady chronią reputację Scotch i pomagają konsumentom rozumieć, co kupują.</p>
             </Section>
+
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-[#B58230] bg-black/85">
             <Image
-              src="/pl/images/RSD_Monogram.jpg"
+              src="/images/RSD_Monogram.jpg"
               alt="RSD Whisky logo"
               width={36}
               height={36}

@@ -4,25 +4,26 @@ export default function StuartDouglasPage() {
   return (
     <PageShell
       title="Stuart Douglas"
-      intro="A straightforward Scotch whisky made for everyday drinking, with steady character and honest presentation."
+      intro="Prosta, uczciwa szkocka whisky przeznaczona do codziennego picia, o stabilnym charakterze i przejrzystej prezentacji."
     >
       <section>
-        <h2 className="mb-1 text-lg font-semibold">Character</h2>
+        <h2 className="mb-1 text-lg font-semibold">Charakter</h2>
         <p>
-          Stuart Douglas is blended Scotch whisky made to be dependable and easy
-          to drink. The aim is a steady, balanced character rather than
-          showmanship, with a clean finish that suits everyday occasions.
+          Stuart Douglas to szkocka whisky typu <strong>blended Scotch</strong>,
+          stworzona z myślą o niezawodności i łatwości picia. Celem jest
+          zrównoważony, stabilny charakter, a nie efekciarstwo, z czystym
+          wykończeniem odpowiednim na co dzień.
         </p>
       </section>
 
       <section className="mt-8">
-        <h2 className="mb-1 text-lg font-semibold">Packaging</h2>
+        <h2 className="mb-1 text-lg font-semibold">Opakowanie</h2>
         <p>
-          The pack is kept clear and simple so that money goes into the whisky,
-          not into unnecessary glass or cardboard. Labels are easy to read and
-          designed to sit properly on shelf in modern retail.
+          Opakowanie jest utrzymane w prostym i czytelnym stylu, tak aby pieniądze
+          trafiały do whisky, a nie w zbędne szkło czy karton. Etykiety są łatwe
+          do odczytania i zaprojektowane tak, aby dobrze prezentowały się na
+          półce w nowoczesnym handlu detalicznym.
         </p>
-        {/* Image slot: bottle and case */}
         <div
           className="mt-4 h-40 rounded-xl bg-neutral-200/60"
           aria-hidden="true"
@@ -30,12 +31,13 @@ export default function StuartDouglasPage() {
       </section>
 
       <section className="mt-8">
-        <h2 className="mb-1 text-lg font-semibold">Markets and use</h2>
+        <h2 className="mb-1 text-lg font-semibold">Rynki i zastosowanie</h2>
         <p>
-          Stuart Douglas is intended for export markets looking for a reliable
-          Scotch at a sensible price point, either as a main shelf brand or as
-          part of a wider whisky range. It can be supplied as an exclusive brand
-          for a particular retailer or national importer.
+          Stuart Douglas jest przeznaczony na rynki eksportowe poszukujące
+          niezawodnej szkockiej whisky w rozsądnym przedziale cenowym — jako
+          główna marka półkowa lub element szerszej oferty whisky. Może być
+          dostarczany jako marka wyłączna dla konkretnego detalisty lub
+          importera krajowego.
         </p>
       </section>
     </PageShell>

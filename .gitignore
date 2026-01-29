@@ -11,3 +11,5 @@ public/images/hero-edinburgh-dome-16.jpeg
 public/images/hero-edinburgh-gallery-14a.jpeg
 public/images/photo-11a.jpg
 public/images/photo-11b.jpg
+
+*.bak-*

@@ -9,15 +9,36 @@ const navItems = [
   { href: "/about", label: "O nas" },
   { href: "/our-whisky", label: "Nasza whisky" },
   { href: "/brands", label: "Nasze marki" },
-  // RTD hidden for now – page still exists but link removed
-  // { href: "/rtd", label: "RTD Drinks" },
   { href: "/how-we-work", label: "Jak pracujemy" },
   { href: "/whisky-knowledge", label: "Wiedza o whisky" },
   { href: "/contact", label: "Kontakt" },
 ];
 
+function StAndrewsFlag() {
+  return (
+    <svg
+      width="20"
+      height="14"
+      viewBox="0 0 20 14"
+      role="img"
+      aria-label="Scottish version"
+      className="block"
+    >
+      <rect width="20" height="14" rx="2" fill="#005EB8" />
+      <path d="M0 0 L3 0 L20 11 L20 14 L17 14 L0 3 Z" fill="#FFFFFF" />
+      <path d="M20 0 L17 0 L0 11 L0 14 L3 14 L20 3 Z" fill="#FFFFFF" />
+      <rect width="20" height="14" rx="2" fill="none" stroke="rgba(0,0,0,0.25)" />
+    </svg>
+  );
+}
+
 export default function Header() {
-  const pathname = usePathname() || "/";
+  const rawPathname = usePathname() || "/";
+  const pathname = rawPathname.replace(/^\/pl(?=\/|$)/, "") || "/";
+
+  const ROOT = "https://www.rsdwhisky.com";
+  const englishPath = pathname === "" ? "/" : pathname;
+  const switchHref = `${ROOT}${englishPath}`;
 
   return (
     <header className="sticky top-0 z-40 border-b border-amber-800/40 bg-[#E5C98E]/95 backdrop-blur">
@@ -33,10 +54,17 @@ export default function Header() {
               priority
             />
           </div>
-          <span className="text-sm font-semibold text-neutral-900">
-            RSD Whisky
-          </span>
+          <span className="text-sm font-semibold text-neutral-900">RSD Whisky</span>
         </Link>
+
+        <a
+          href={switchHref}
+          className="inline-flex items-center justify-center rounded-full border border-neutral-900/30 bg-[#F7E8C4] px-3 py-2 text-xs font-medium text-neutral-900 hover:border-neutral-900"
+          aria-label="Switch to Scottish version"
+          title="Scottish version"
+        >
+          <StAndrewsFlag />
+        </a>
       </div>
 
       <nav aria-label="Main" className="border-t border-amber-800/40 bg-[#E5C98E]/95">

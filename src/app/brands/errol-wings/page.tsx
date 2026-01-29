@@ -41,8 +41,8 @@ export default function ErrolWingsPage() {
 
         <div className="mt-4 overflow-hidden rounded-2xl bg-neutral-50">
           <Image
-            src="/images/brand-errol-wings.jpg"
-            alt="Errol Wings Single Malt — butelka"
+            src="/images/brand-errol-wings-single-malt-3-front.jpeg"
+            alt="Errol Wings Single Malt — butelka (Pilots Reserve, 3 lata)"
             width={1200}
             height={1200}
             className="h-64 w-full object-contain p-6"

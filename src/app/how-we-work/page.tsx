@@ -3,43 +3,44 @@ import PageShell from "@/components/PageShell";
 export default function HowWeWorkPage() {
   return (
     <PageShell
-      title="How We Work"
-      intro="Our approach is simple. We keep overheads low, work with experienced people in the independent Scotch sector, and put most of the cost into the liquid in the bottle or can."
+      title="Jak pracujemy"
+      intro="Nasze podejście jest proste. Utrzymujemy niskie koszty stałe, współpracujemy z doświadczonymi specjalistami z niezależnego sektora szkockiej whisky i przeznaczamy większość kosztu na samą whisky w butelce lub puszce."
     >
       <section>
-        <h2 className="mb-1 text-lg font-semibold">Independent expertise</h2>
+        <h2 className="mb-1 text-lg font-semibold">Niezależna wiedza i doświadczenie</h2>
         <p>
-          We work with highly experienced people in the independent Scotch
-          sector who select casks for blending and understand how to build
-          whisky with the right character and consistency. Consistency is what
-          supports a brand, and brands are what sustain the Scotch whisky
-          business.
+          Współpracujemy z bardzo doświadczonymi osobami z niezależnego sektora
+          szkockiej whisky, które dobierają beczki do kupażowania i rozumieją,
+          jak budować whisky o odpowiednim charakterze i powtarzalnej jakości.
+          Spójność jest tym, co wspiera markę, a marki są tym, co podtrzymuje
+          biznes szkockiej whisky.
         </p>
       </section>
 
       <section>
         <h2 className="mb-1 text-lg font-semibold">
-          Bottling, canning and production
+          Rozlew, puszkowanie i produkcja
         </h2>
         <p>
-          We work with small, medium and large Scottish bottlers and canning
-          specialists. This gives us flexibility, competitive pricing and
-          reliable production. It allows us to make different brands and handle
-          a wide range of volumes, from prestige one-off bottlings through to
-          full container-load RTD runs.
+          Współpracujemy z małymi, średnimi i dużymi szkockimi rozlewniami oraz
+          specjalistami od puszkowania. Daje nam to elastyczność, konkurencyjne
+          ceny i pewną realizację produkcji. Pozwala to tworzyć różne marki i
+          obsługiwać szeroki zakres wolumenów – od prestiżowych, jednorazowych
+          rozlewów po pełne kontenery gotowych napojów RTD.
         </p>
       </section>
 
       <section>
-        <h2 className="mb-1 text-lg font-semibold">Markets we serve</h2>
+        <h2 className="mb-1 text-lg font-semibold">Rynki, które obsługujemy</h2>
         <p>
-          Our main focus is on emerging markets, though we can supply mature
-          ones too. In many growing markets, a rising middle class values the
-          appearance of discernment and wants to show that they can afford an
-          imported spirit while still buying local products. Scotch offers trust,
-          heritage and authenticity. We generally work directly with retailers
-          or major importers and create exclusive brands for each geographical
-          market.
+          Naszym głównym obszarem zainteresowania są rynki rozwijające się,
+          chociaż dostarczamy również na rynki dojrzałe. W wielu rosnących
+          gospodarkach powiększająca się klasa średnia ceni wrażenie wyboru i
+          chce pokazać, że stać ją na importowany alkohol, jednocześnie kupując
+          produkty lokalne. Szkocka whisky oferuje zaufanie, dziedzictwo i
+          autentyczność. Zazwyczaj współpracujemy bezpośrednio z detalistami lub
+          dużymi importerami i tworzymy marki wyłączne dla poszczególnych rynków
+          geograficznych.
         </p>
       </section>
     </PageShell>

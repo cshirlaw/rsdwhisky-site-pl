@@ -11,18 +11,24 @@ export default function SiteFooter() {
             <p className="font-medium">{SITE.name}</p>
             <p>{c.address}</p>
             <p>{c.telOffice} · {c.telMobile}</p>
-            <p><a className="hover:underline" href={`mailto:${c.email}`}>{c.email}</a></p>
+            <p>
+              <a className="hover:underline" href={`mailto:${c.email}`}>
+                {c.email}
+              </a>
+            </p>
           </div>
           <nav className="grid gap-1">
-            <Link href="/our-story" className="hover:underline">Our Story</Link>
-            <Link href="/the-quality" className="hover:underline">The Quality</Link>
-            <Link href="/our-brands" className="hover:underline">Our Brands</Link>
-            <Link href="/contact" className="hover:underline">Contact Us</Link>
-            <Link href="/privacy" className="hover:underline">Privacy</Link>
-            <Link href="/terms" className="hover:underline">Terms</Link>
+            <Link href="/our-story" className="hover:underline">O nas</Link>
+            <Link href="/the-quality" className="hover:underline">Jakość</Link>
+            <Link href="/our-brands" className="hover:underline">Nasze marki</Link>
+            <Link href="/contact" className="hover:underline">Kontakt</Link>
+            <Link href="/privacy" className="hover:underline">Polityka prywatności</Link>
+            <Link href="/terms" className="hover:underline">Warunki</Link>
           </nav>
         </div>
-        <p className="mt-6 text-xs">© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
+        <p className="mt-6 text-xs">
+          © {new Date().getFullYear()} {SITE.name}. Wszelkie prawa zastrzeżone.
+        </p>
       </div>
     </footer>
   );

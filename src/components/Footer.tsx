@@ -5,14 +5,15 @@ export default function Footer() {
         <div className="space-y-1">
           <div className="font-semibold">RSD Whisky</div>
           <div>5 Lochside Way, Edinburgh EH12 9DT</div>
+          <div>Wielka Brytania</div>
           <div>+44 131 659 9829 · +44 7831 495 163</div>
           <div>c.shirlaw@rsdwhisky.com</div>
         </div>
         <div className="space-y-1 text-right">
-          <div>Scottish independent Scotch whisky business.</div>
-          <div>Advisory · Bulk and brands · Canned RTD drinks.</div>
+          <div>Niezależny szkocki producent whisky.</div>
+          <div>Doradztwo · Hurt · Marki · Napoje RTD w puszkach.</div>
           <div className="text-xs text-neutral-800">
-            © 2025 RSD Whisky. All rights reserved.
+            © 2025 RSD Whisky. Wszelkie prawa zastrzeżone.
           </div>
         </div>
       </div>

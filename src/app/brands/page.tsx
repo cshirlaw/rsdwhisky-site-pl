@@ -25,7 +25,7 @@ export default function BrandsPage() {
         <article className="flex flex-col rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
           <div className="mb-4 flex h-56 items-end justify-center rounded-xl bg-neutral-50 px-4 py-6">
             <Image
-              src="/images/brand-stuart-Douglas.JPG"
+              src="/pl/images/brand-stuart-Douglas.JPG"
               alt="Stuart Douglas"
               width={400}
               height={400}
@@ -51,7 +51,7 @@ export default function BrandsPage() {
         <article className="flex flex-col rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
           <div className="mb-4 flex h-56 items-end justify-center rounded-xl bg-neutral-50 px-4 py-6">
             <Image
-              src="/images/brand-errol-wings.jpg"
+              src="/pl/images/brand-errol-wings.jpg"
               alt="Errol Wings"
               width={400}
               height={400}
@@ -78,7 +78,7 @@ export default function BrandsPage() {
         <article className="flex flex-col rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
           <div className="mb-4 flex h-56 items-end justify-center rounded-xl bg-neutral-50 px-4 py-6">
             <Image
-              src="/images/brand-castlecraig.jpg"
+              src="/pl/images/brand-castlecraig.jpg"
               alt="Castlecraig"
               width={400}
               height={400}
@@ -105,7 +105,7 @@ export default function BrandsPage() {
         <article className="flex flex-col rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
           <div className="mb-4 flex h-56 items-end justify-center rounded-xl bg-neutral-50 px-4 py-6">
             <Image
-              src="/images/brand-ravendale.jpg"
+              src="/pl/images/brand-ravendale.jpg"
               alt="Ravendale Irish Whiskey"
               width={400}
               height={400}
@@ -133,7 +133,7 @@ export default function BrandsPage() {
         <article className="flex flex-col rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
           <div className="mb-4 flex h-56 items-end justify-center rounded-xl bg-neutral-50 px-4 py-6">
             <Image
-              src="/images/brand-prestige.jpg"
+              src="/pl/images/brand-prestige.jpg"
               alt="Prestige bottlings"
               width={400}
               height={400}

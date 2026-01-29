@@ -10,7 +10,7 @@ export default function RtdPage() {
       {/* Inline banner (no hero) */}
       <div className="mb-6 overflow-hidden rounded-2xl">
         <Image
-          src="/images/home-inline.jpg"
+          src="/pl/images/home-inline.jpg"
           alt="RTD drinks banner"
           width={1600}
           height={600}

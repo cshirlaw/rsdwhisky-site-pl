@@ -6,7 +6,7 @@ export default function HomePage() {
       <div
         className="pointer-events-none absolute inset-0 -z-10 bg-black"
         style={{
-          backgroundImage: "url(/images/calton-hill-1.jpeg)",
+          backgroundImage: "url(/pl/images/calton-hill-1.jpeg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

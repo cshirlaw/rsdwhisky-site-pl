@@ -28,7 +28,7 @@ export default function RavendalePage() {
 
         <div className="mt-4 overflow-hidden rounded-2xl bg-neutral-50">
           <Image
-            src="/images/brand-ravendale.jpg"
+            src="/pl/images/brand-ravendale.jpg"
             alt="Ravendale Irish Whiskey — butelka i opakowanie"
             width={1200}
             height={1200}

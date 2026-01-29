@@ -9,7 +9,7 @@ export default function QuoteBlock() {
     <figure className="rounded-xl border bg-white p-6 flex flex-col md:flex-row items-start gap-6">
       <div className="relative flex-shrink-0 w-28 h-28 rounded-full overflow-hidden border">
         <Image
-          src="/images/people/charlie-maclean.jpg"
+          src="/pl/images/people/charlie-maclean.jpg"
           alt={q.author}
           fill
           className="object-cover"

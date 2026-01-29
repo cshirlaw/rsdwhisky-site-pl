@@ -18,7 +18,7 @@ export default function ErrolWingsPage() {
 
         <div className="mt-4 overflow-hidden rounded-2xl bg-neutral-50">
           <Image
-            src="/images/brand-errol-wings.jpg"
+            src="/pl/images/brand-errol-wings.jpg"
             alt="Errol Wings 12-letnia — butelka i opakowanie"
             width={1200}
             height={1200}
@@ -41,7 +41,7 @@ export default function ErrolWingsPage() {
 
         <div className="mt-4 overflow-hidden rounded-2xl bg-neutral-50">
           <Image
-            src="/images/brand-errol-wings-single-malt-3-front.jpeg"
+            src="/pl/images/brand-errol-wings-single-malt-3-front.jpeg"
             alt="Errol Wings Single Malt — butelka (Pilots Reserve, 3 lata)"
             width={1200}
             height={1200}

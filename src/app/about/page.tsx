@@ -10,7 +10,7 @@ export default function AboutPage() {
       {/* Hero image */}
       <div className="mb-6 overflow-hidden rounded-2xl">
         <Image
-          src="/images/about-banner.jpg"
+          src="/pl/images/about-banner.jpg"
           alt="Edynburg — siedziba RSD Whisky"
           width={1600}
           height={600}
@@ -32,7 +32,7 @@ export default function AboutPage() {
         <div className="rounded-2xl bg-neutral-50 p-4">
           <div className="flex h-64 items-center justify-center">
             <Image
-              src="/images/about-inline.JPG"
+              src="/pl/images/about-inline.JPG"
               alt="Ulica w Edynburgu — lokalne dziedzictwo"
               width={900}
               height={600}
@@ -56,7 +56,7 @@ export default function AboutPage() {
         <div className="rounded-2xl bg-neutral-50 p-4">
           <div className="flex h-64 items-center justify-center">
             <Image
-              src="/images/about-inline2.jpg"
+              src="/pl/images/about-inline2.jpg"
               alt="Tradycyjna architektura związana z whisky w Edynburgu"
               width={900}
               height={600}

@@ -26,7 +26,7 @@ export default function CastlecraigPage() {
 
         <div className="mt-4 overflow-hidden rounded-2xl bg-neutral-50">
           <Image
-            src="/images/brand-castlecraig.jpg"
+            src="/pl/images/brand-castlecraig.jpg"
             alt="Castlecraig — butelka i opakowanie"
             width={1200}
             height={1200}

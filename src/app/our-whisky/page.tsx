@@ -10,7 +10,7 @@ export default function OurWhiskyPage() {
       {/* Hero image */}
       <div className="mb-6 overflow-hidden rounded-2xl">
         <Image
-          src="/images/our-whisky-banner.jpg"
+          src="/pl/images/our-whisky-banner.jpg"
           alt="Beczki whisky w tradycyjnym magazynie."
           width={1600}
           height={600}
@@ -33,7 +33,7 @@ export default function OurWhiskyPage() {
         <div className="rounded-2xl bg-neutral-50 p-4">
           <div className="flex h-64 items-center justify-center">
             <Image
-              src="/images/our-whisky-scotch.jpg"
+              src="/pl/images/our-whisky-scotch.jpg"
               alt="Szkocka whisky podawana w szklance."
               width={900}
               height={600}
@@ -58,7 +58,7 @@ export default function OurWhiskyPage() {
         <div className="rounded-2xl bg-neutral-50 p-4">
           <div className="flex h-64 items-center justify-center">
             <Image
-              src="/images/our-whisky-malt.jpg"
+              src="/pl/images/our-whisky-malt.jpg"
               alt="Whisky single malt"
               width={900}
               height={600}
@@ -81,7 +81,7 @@ export default function OurWhiskyPage() {
         <div className="rounded-2xl bg-neutral-50 p-4">
           <div className="flex h-64 items-center justify-center">
             <Image
-              src="/images/our-whisky-private.jpg"
+              src="/pl/images/our-whisky-private.jpg"
               alt="Opakowania whisky marek własnych"
               width={900}
               height={600}

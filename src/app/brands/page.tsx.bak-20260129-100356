@@ -1,3 +1,9 @@
+cd ~/rsdwhisky-site-pl
+
+ts=$(date +%Y%m%d-%H%M%S)
+cp -v src/app/brands/page.tsx "src/app/brands/page.tsx.bak-$ts"
+
+cat > src/app/brands/page.tsx <<'EOF'
 import Image from "next/image";
 import PageShell from "@/components/PageShell";
 
@@ -5,22 +11,20 @@ export default function BrandsPage() {
   return (
     <PageShell
       title="Nasze marki"
-      intro="Niewielki zestaw marek whisky — każda tworzona z myślą o jasnej wartości, stabilnej jakości i rozsądnej cenie półkowej."
+      intro="Niewielki zestaw marek whisky — każda zaprojektowana pod jasną wartość, stabilną jakość i sensowną cenę na półce."
     >
-      {/* Wprowadzenie */}
+      {/* Overview */}
       <section>
         <h2 className="mb-1 text-lg font-semibold">Przegląd</h2>
         <p>
-          Oferujemy starannie dobrany zestaw marek whisky. Każda z nich może być
-          dostarczana na zasadzie wyłączności dla danego detalisty lub rynku,
-          z dopasowanym alkoholem i prezentacją odpowiednią do poziomu cenowego
-          i lokalnych oczekiwań.
+          Oferujemy niewielki zestaw marek whisky. Każda może być dostarczana na
+          wyłączność dla detalisty lub rynku, z doborem alkoholu i oprawy
+          uzgodnionym tak, aby pasowały do poziomu cenowego i lokalnych potrzeb.
         </p>
       </section>
 
-      {/* Siatka marek */}
+      {/* Brand grid */}
       <section className="mt-8 grid gap-6 md:grid-cols-2">
-
         {/* Stuart Douglas */}
         <article className="flex flex-col rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
           <div className="mb-4 flex h-56 items-end justify-center rounded-xl bg-neutral-50 px-4 py-6">
@@ -38,8 +42,9 @@ export default function BrandsPage() {
             </p>
             <h2 className="mt-1 text-base font-semibold">Stuart Douglas</h2>
             <p className="mt-1 text-sm">
-              Prosta, codzienna szkocka whisky. Czysty charakter, powtarzalna
-              jakość i uczciwa prezentacja — bez zbędnych kosztów.
+              Prosta, uczciwa szkocka whisky na co dzień. Czysty charakter,
+              pewna jakość i oprawa, która dobrze wygląda na półce bez
+              niepotrzebnych kosztów.
             </p>
             <p className="mt-2 text-sm underline">
               <a href="/brands/stuart-douglas">Dowiedz się więcej</a>
@@ -64,9 +69,9 @@ export default function BrandsPage() {
             </p>
             <h2 className="mt-1 text-base font-semibold">Errol Wings</h2>
             <p className="mt-1 text-sm">
-              Szkocka whisky o tematyce lotniczej, dostępna w wersjach
-              12-letnich oraz młodszych. Przeznaczona dla rynków, które
-              oczekują jasnych deklaracji wieku i rozsądnej ceny.
+              Szkocka whisky z motywem lotniczym, produkowana w wersji 12-letniej
+              oraz młodszej. Dla rynków, które cenią jasne oznaczenia wieku i
+              rozsądną cenę.
             </p>
             <p className="mt-2 text-sm underline">
               <a href="/brands/errol-wings">Dowiedz się więcej</a>
@@ -91,9 +96,9 @@ export default function BrandsPage() {
             </p>
             <h2 className="mt-1 text-base font-semibold">Castlecraig</h2>
             <p className="mt-1 text-sm">
-              Tradycyjnie prezentowana szkocka whisky z klasyczną nazwą
-              i przejrzystą etykietą. Stworzona z myślą o dużych wolumenach
-              i silnej relacji jakości do ceny.
+              Klasycznie wyglądająca szkocka whisky z tradycyjną nazwą, czytelną
+              etykietą i sensownym poziomem cenowym. Zaprojektowana pod mocną
+              wartość i wolumeny odpowiednie dla dużych detalistów.
             </p>
             <p className="mt-2 text-sm underline">
               <a href="/brands/castlecraig">Dowiedz się więcej</a>
@@ -120,8 +125,10 @@ export default function BrandsPage() {
               Ravendale — Irish Whiskey
             </h2>
             <p className="mt-1 text-sm">
-              Trzykrotnie destylowana whiskey w klasycznym irlandzkim stylu —
-              lżejsza, gładsza i bardziej miękka niż większość szkockich whisky.
+              Ravendale jest destylowana trzykrotnie w tradycyjnym irlandzkim
+              stylu — lżejsza, łagodniejsza i z czystszym finiszem niż większość
+              szkockich whisky. Prosty charakter, dobra wartość i przejrzysta
+              oprawa.
             </p>
             <p className="mt-2 text-sm underline">
               <a href="/brands/ravendale">Dowiedz się więcej</a>
@@ -129,7 +136,7 @@ export default function BrandsPage() {
           </div>
         </article>
 
-        {/* Prestige */}
+        {/* Prestige bottlings */}
         <article className="flex flex-col rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
           <div className="mb-4 flex h-56 items-end justify-center rounded-xl bg-neutral-50 px-4 py-6">
             <Image
@@ -146,16 +153,17 @@ export default function BrandsPage() {
             </p>
             <h2 className="mt-1 text-base font-semibold">Edycje prestiżowe</h2>
             <p className="mt-1 text-sm">
-              Wybrane beczki single malt, whisky z deklaracją wieku oraz limitowane
-              edycje w karafkach Glencairn lub opakowaniach premium.
+              Wyselekcjonowane beczki single malt, whisky z oznaczeniem wieku i
+              limitowane edycje w karafkach Glencairn lub z premium opakowaniem.
+              Dla klientów prywatnych i wydań specjalistycznych.
             </p>
             <p className="mt-2 text-sm underline">
               <a href="/brands/prestige">Dowiedz się więcej</a>
             </p>
           </div>
         </article>
-
       </section>
     </PageShell>
   );
 }
+EOF

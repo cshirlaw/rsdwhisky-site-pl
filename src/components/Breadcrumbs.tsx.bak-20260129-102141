@@ -12,19 +12,19 @@ export default function Breadcrumbs({ small }: BreadcrumbsProps) {
   const segments = pathname.split("/").filter(Boolean);
 
   const labelMap: Record<string, string> = {
-    "about": "O nas",
-    "our-whisky": "Nasza whisky",
-    "brands": "Nasze marki",
-    "rtd": "Napoje RTD",
-    "how-we-work": "Jak pracujemy",
-    "whisky-knowledge": "Wiedza o whisky",
-    "contact": "Kontakt",
+    "about": "About",
+    "our-whisky": "Our Whisky",
+    "brands": "Our Brands",
+    "rtd": "RTD Drinks",
+    "how-we-work": "How We Work",
+    "whisky-knowledge": "Whisky Knowledge",
+    "contact": "Contact",
   };
 
   const sizeClass = small ? "text-xs" : "text-sm";
 
   const crumbs = [
-    { href: "/", label: "Strona główna" },
+    { href: "/", label: "Home" },
     ...segments.map((seg, index) => {
       const href = "/" + segments.slice(0, index + 1).join("/");
       const mapped =
